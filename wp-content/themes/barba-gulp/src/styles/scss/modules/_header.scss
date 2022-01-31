@@ -1,0 +1,80 @@
+.header { 
+  padding: 20px 30px 20px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: $light-color;
+  @media(min-width: 576px){
+    padding: 20px 30px 20px 70px;
+  }
+  @media(min-width: 1200px){
+    padding: vw(20) vw(30) vw(20) vw(70);
+  }
+  &__logo{
+    min-width: 150px;
+    width: vw(150);
+  }
+  &__options{
+    display: none;
+    @media(min-width: 1200px){
+      display: block;
+    }
+  }
+  &__option{
+    margin-left: 0;
+    margin-top: 20px;
+    color: $text-color;
+    @include page-text();
+    cursor: pointer;
+    transition: border .5s ease-out;
+    padding-bottom: 2px;
+    border-bottom: 3px solid $light-color;
+    &:hover{
+      border-bottom: 3px solid $main-color;
+      @media(min-width: 1920px){
+        border-bottom: vw(3) solid $main-color;
+      }
+    }
+    @media(min-width: 1200px){
+      margin-left: vw(30);
+      margin-bottom: 0;
+    }
+    @media(min-width: 1920px){
+      padding-bottom: vw(2);
+      border-bottom: vw(3) solid $light-color;
+    }
+  }
+  &__button{
+    @include page-text();
+    margin-left: 0;
+    padding: 15px 20px;
+    color: $light-color;
+    border: none;
+    cursor: pointer;
+    transition: .5s ease-out;
+    background-color: $main-color;
+    border: 2px solid $main-color;
+    &:hover{
+      background-color: $light-color;
+      color: $main-color;
+    }
+    @media(min-width: 1200px){
+      margin-left: vw(30);
+    }
+    @media(min-width: 1920px){
+      padding: vw(15) vw(20);
+      border: vw(2) solid $main-color;
+    }
+  }
+  &__mobile{
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 66px;
+    left: 0;
+    background-color: $light-color;
+    padding: 50px 0;
+    border-bottom: 5px solid $main-color;
+  }
+}

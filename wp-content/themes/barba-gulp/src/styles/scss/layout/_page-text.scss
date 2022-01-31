@@ -1,0 +1,5 @@
+@mixin page-text($size: 18, $weight: $normal-font) {
+  @extend %font-#{$size};
+  color: $text-color;
+  font-family: $weight;
+}

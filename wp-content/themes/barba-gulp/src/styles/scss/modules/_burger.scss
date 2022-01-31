@@ -1,0 +1,38 @@
+.burger {
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 5px 0;
+  margin: 0;
+  background: $light-color;
+  transition: 0.4s ease-out;
+  outline: none;
+  &__path {
+    fill:none;
+    stroke: $main-color;
+    stroke-width: 2px;
+    transform-origin: right;
+    transition: .4s ease;
+    &--second {
+      transform: translateY(6px) translateX(6px);
+    }
+    &--third {
+      transform: translateY(13px);
+    }
+  }
+  &--open {
+    background: $main-color;
+    .burger__path {
+      stroke: $light-color;
+      &--second {
+        opacity: 0;
+      }
+      &--first {
+        transform: rotate(-45deg) translate(6px,4px) scale(1.4);
+      }
+      &--third {          
+        transform: translate(-7px,15px) rotate(45deg) scale(1.4);
+      }
+    }
+  }  
+}

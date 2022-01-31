@@ -1,0 +1,76 @@
+.raport {
+  padding-top: 66px;
+  @media(min-width: 1920px){
+    padding-top: vw(66);
+  }
+  &__header {
+    @extend .page-top--blue;
+  }
+  &__title{
+    text-align: center;
+    @include page-text(40, $bold-font);
+  }
+  &__intro {
+    padding-top: 55px;
+    @include page-text();
+    @media(min-width: 1200px){
+      padding-top: vw(55);
+    }
+  }
+  &__text {
+    padding: 30px 0 50px;
+    @include page-text(14);
+    @media(min-width: 1200px){
+      padding: vw(30) 0 vw(50);
+    }
+  }
+  &__info{
+    padding: 50px;
+    @include page-text(24);
+    text-align: center;
+    @media(min-width: 1200px){
+      padding: vw(50);
+    }
+  }
+  &__button{
+    @include page-text;
+    padding: 30px 75px;
+    border: 2px solid $main-color;
+    background-color: $main-color;
+    color: $light-color;
+    transition: .5s ease-out;
+    cursor: pointer;
+    &:hover{
+      background-color: $light-color;
+      color: $main-color;
+    }
+    @media(min-width: 1200px){
+      padding: vw(30) vw(75);
+      border: vw(2) solid $main-color;
+    }
+  }
+  &__box{
+    &-text{
+      padding: 15px 0 20px;
+      @include page-text(14);
+      margin-bottom: 20px;
+      @media(min-width: 1200px){
+        padding: vw(15) 0 vw(20);
+        margin-bottom: 0;
+      }
+    }
+    &-img{
+      width: 100%;
+    }
+  }
+  &__img{
+    margin-bottom: -10%;
+    z-index: -1;
+    width: vw(980);
+    min-width: 300px;
+    transform: rotate(5deg);
+  }
+  @media(min-width: 1200px){
+    min-width: 980px;
+  }
+}

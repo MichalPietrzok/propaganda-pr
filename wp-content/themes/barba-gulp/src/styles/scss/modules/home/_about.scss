@@ -1,0 +1,57 @@
+.homepage-about {
+  position: relative;
+  padding: 100px 0 100px;
+  @media (min-width: 1200px) {
+    padding: vw(140) 0 vw(150);
+  }
+  &__title {
+    @include page-text(36, $bold-font);
+    padding-bottom: 50px;
+    @media (min-width: 1200px) {
+      padding-bottom: vw(70);
+    }
+  }
+  &__text {
+    z-index: 1;
+    @include page-text(14);
+    padding: 0 0 20px 0;
+    line-height: 1.9;
+    @media(min-width: 767px){
+      padding: 0 58px 20px 0;
+    }
+    @media (min-width: 1200px) {
+      padding: 0 vw(58) vw(20) 0;
+    }
+  }
+  &__personal {
+    padding-top: 24px;
+    text-align: center;
+    @include page-text(14);
+    @media(min-width: 767px){
+      text-align: right;
+    }
+    @media (min-width: 1200px) {
+      padding-top: vw(24);
+    }
+  }
+  &__name {
+    @include page-text(14, $bold-font);
+  }
+  &__img {
+    width: vw(189);
+    min-width: 189px;
+    padding-top: 20px;
+    @media(min-width: 767px){
+      padding-top: 0;
+    }
+  }
+  &__decoration{
+    z-index: -3;
+    position: absolute;
+    bottom: -220px;
+    width: 100%;
+    @media(min-width: 1200px){
+      bottom: vw(-100);
+    }
+  }
+}

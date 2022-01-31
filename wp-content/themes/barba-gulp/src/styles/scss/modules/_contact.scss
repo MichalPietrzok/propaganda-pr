@@ -1,0 +1,43 @@
+.contact{
+  padding-top: 66px;
+  @media(min-width: 1200px){
+    padding-top: vw(66);
+  }
+  &__header{
+    @extend .page-top;
+    background-color: $cyan;
+  }
+  &__title{
+    text-align: center;
+    @include page-text(40, $bold-font);
+  }
+  &__info{
+    width: 100%;
+    padding-bottom: 40px;
+    @include page-text(20);
+    color: $gray;
+    @media (min-width: 767px){
+      padding-bottom: 0;
+      margin-right: 100px;
+    }
+    @media(min-width: 1200px){
+      margin-right: vw(100);
+    }
+  }
+  &__desc{
+    padding: 100px 15px;
+    @media(min-width: 1200px){
+      padding: vw(100) vw(15);
+    }
+  }
+  &__label{
+    @include page-text(24,$bold-font);
+    padding-bottom: 50px;
+    @media(min-width: 1200px){
+      padding-bottom: vw(50);
+    }
+  }
+  &__text{
+    @include page-text();
+  }
+}
