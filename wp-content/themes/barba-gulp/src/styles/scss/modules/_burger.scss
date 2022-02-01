@@ -8,11 +8,11 @@
   transition: 0.4s ease-out;
   outline: none;
   &__path {
-    fill:none;
+    fill: none;
     stroke: $main-color;
     stroke-width: 2px;
     transform-origin: right;
-    transition: .4s ease;
+    transition: 0.4s ease;
     &--second {
       transform: translateY(6px) translateX(6px);
     }
@@ -28,11 +28,11 @@
         opacity: 0;
       }
       &--first {
-        transform: rotate(-45deg) translate(6px,4px) scale(1.4);
+        transform: rotate(-45deg) translate(6px, 4px) scale(1.4);
       }
-      &--third {          
-        transform: translate(-7px,15px) rotate(45deg) scale(1.4);
+      &--third {
+        transform: translate(-7px, 15px) rotate(45deg) scale(1.4);
       }
     }
-  }  
+  }
 }

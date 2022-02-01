@@ -1,22 +1,22 @@
-.homepage-apel{
+.homepage-apel {
   padding: 50px 0;
-  @media(min-width: 1200px){
+  @media (min-width: 1200px) {
     padding: vw(110) 0 vw(90);
   }
-  &__title{
+  &__title {
     text-align: center;
     padding-bottom: 26px;
-    @include page-text(36,$bold-font);
-    @media (min-width: 1200px){
+    @include page-text(36, $bold-font);
+    @media (min-width: 1200px) {
       padding-bottom: vw(26);
     }
   }
-  &__text{
+  &__text {
     text-align: center;
     line-height: 1.9;
     @include page-text();
     margin-bottom: 30px;
-    @media(min-width: 1200px){
+    @media (min-width: 1200px) {
       margin-bottom: vw(30);
     }
   }

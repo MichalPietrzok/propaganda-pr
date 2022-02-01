@@ -1,16 +1,16 @@
-.page-top{
+.page-top {
   padding: 100px 0;
   width: 100%;
-  &--blue{
+  &--blue {
     color: $light-color;
     @extend .page-top;
     background-color: $light-blue;
   }
-  &--cyan{
+  &--cyan {
     @extend .page-top;
     background-color: $cyan;
   }
-  &--yellow{
+  &--yellow {
     color: $light-color;
     @extend .page-top;
     background-color: $yellow;

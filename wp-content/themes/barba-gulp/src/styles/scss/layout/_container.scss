@@ -10,36 +10,36 @@
       max-width: vw(1690);
     }
   }
-  &--small{
-    @media(min-width: 767px){
+  &--small {
+    @media (min-width: 767px) {
       max-width: 757px;
     }
-    @media(min-width: 1920px){
+    @media (min-width: 1920px) {
       max-width: vw(757);
     }
   }
-  &--xsamll{
-    @media(min-width: 576px){
+  &--xsamll {
+    @media (min-width: 576px) {
       max-width: 530px;
     }
-    @media(min-width: 1920px){
+    @media (min-width: 1920px) {
       max-width: vw(530);
     }
   }
-  &--medium{
-    @media(min-width: 992px){
+  &--medium {
+    @media (min-width: 992px) {
       max-width: 800px;
     }
-    @media(min-width: 1920px){
+    @media (min-width: 1920px) {
       max-width: vw(800);
     }
   }
-  &--middle{
-    @media(min-width: 992px){
+  &--middle {
+    @media (min-width: 992px) {
       max-width: 935px;
     }
-    @media(min-width: 1920px){
-      max-width:  vw(935);
+    @media (min-width: 1920px) {
+      max-width: vw(935);
     }
   }
 }

@@ -1,27 +1,27 @@
-.homepage-banner{
+.homepage-banner {
   position: relative;
   margin-top: 62px;
-  @media(min-width: 1920px){
+  @media (min-width: 1920px) {
     margin-top: vw(62);
   }
-  &__img{
+  &__img {
     width: 100%;
   }
-  &__content{
+  &__content {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
     background-color: $light-blue;
     padding: 40px 0 50px;
-    @media(min-width: 767px){
-      padding: 100px 0 70px
+    @media (min-width: 767px) {
+      padding: 100px 0 70px;
     }
-    @media(min-width: 1200px){
+    @media (min-width: 1200px) {
       padding: vw(135) 0 vw(70);
     }
   }
-  &__logo{
+  &__logo {
     min-width: 200px;
     width: vw(814);
   }

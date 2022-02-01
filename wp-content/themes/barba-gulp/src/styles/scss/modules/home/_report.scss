@@ -29,7 +29,7 @@
     transform: translateX(-50%);
     bottom: 30px;
     @include page-text(36, $bold-font);
-    @media (min-width: 1200px){
+    @media (min-width: 1200px) {
       bottom: vw(30);
     }
   }
@@ -57,7 +57,7 @@
       position: relative;
       overflow: hidden;
       padding-left: 30px;
-      @media (min-width: 1200px){
+      @media (min-width: 1200px) {
         padding-left: vw(30);
       }
     }
@@ -73,24 +73,24 @@
       color: $light-color;
       max-width: 350px;
       z-index: 1;
-      @media(min-width: 992px){
+      @media (min-width: 992px) {
         max-width: 250px;
       }
     }
-    @media(min-width: 1920px){
-        width: vw(350);
-        max-width: none;
-        min-width: 350px;
+    @media (min-width: 1920px) {
+      width: vw(350);
+      max-width: none;
+      min-width: 350px;
     }
   }
   &__diagram {
     margin: 50px 0 40px 0;
     width: 100%;
     max-width: 500px;
-    @media(min-width: 1200px){
+    @media (min-width: 1200px) {
       margin: vw(50) 0 vw(40) 0;
     }
-    @media(min-width: 1920px){
+    @media (min-width: 1920px) {
       max-width: none;
     }
   }
@@ -100,7 +100,7 @@
     &-caption {
       margin-left: -70px !important;
       @include page-text(16);
-      @media(min-width: 1920px){
+      @media (min-width: 1920px) {
         margin-left: vw(-70) !important;
         width: 300vw;
         max-width: none;
@@ -111,7 +111,7 @@
       padding-left: 40px;
       padding-bottom: 20px;
     }
-    @media(min-width: 1920px){
+    @media (min-width: 1920px) {
       width: vw(300);
       max-width: none;
       min-width: 300px;
@@ -140,7 +140,7 @@
       color: $main-color;
       background-color: $light-color;
     }
-    @media(min-width: 1920px){
+    @media (min-width: 1920px) {
       padding: vw(20) vw(90);
       margin-top: vw(45);
     }
@@ -150,7 +150,7 @@
     bottom: 0;
     right: -150px;
     filter: contrast(0.5);
-    @media(min-width: 1920px){
+    @media (min-width: 1920px) {
       height: vw(300);
       right: vw(-150);
     }
@@ -160,7 +160,7 @@
     @include page-text();
     color: $light-color;
     padding-bottom: 20px;
-    @media(min-width: 1920px){
+    @media (min-width: 1920px) {
       max-width: vw(320);
     }
   }
@@ -169,7 +169,7 @@
     margin-bottom: 20px;
     width: 100%;
     max-width: 350px;
-    @media(min-width: 1920px){
+    @media (min-width: 1920px) {
       max-width: vw(350);
     }
   }

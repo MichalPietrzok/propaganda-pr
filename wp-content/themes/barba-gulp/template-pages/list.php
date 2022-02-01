@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="show__area d-flex flex-row justify-content-center">
-            <a href="" class="list__show">Rozwiń listę</a>
+          <a href="" class="list__show">Rozwiń listę</a>
         </div>
       </div>
     </div>

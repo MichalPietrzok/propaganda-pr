@@ -28,12 +28,14 @@
           <button class="homepage-report__button">Pobierz raport</button>
         </div>
       </div>
-      <div class="homepage-report__column homepage-report__column--blue d-flex flex-column align-items-center align-items-lg-start">
+      <div
+        class="homepage-report__column homepage-report__column--blue d-flex flex-column align-items-center align-items-lg-start">
         <img src="<?=images()?>puppet.png" alt="" class="homepage-report__puppet">
         <p class="homepage-report__question">Czy kiedykolwiek ktoś z twojego bliskiego otoczenia uznał twój zawód za
           nieetyczny?</p>
         <img src="<?=images()?>info-graph.svg" alt="" class="homepage-report__graph">
-        <p class="homepage-report__caption homepage-report__caption--light">Badanie zrealizowane we wrześniu 2021 roku przez Związek Firm Public
+        <p class="homepage-report__caption homepage-report__caption--light">Badanie zrealizowane we wrześniu 2021 roku
+          przez Związek Firm Public
           Relations na grupie 187 pracowników agencji członkowskich ZFPR.</p>
       </div>
     </div>

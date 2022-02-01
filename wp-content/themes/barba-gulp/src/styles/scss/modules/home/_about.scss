@@ -16,7 +16,7 @@
     @include page-text(14);
     padding: 0 0 20px 0;
     line-height: 1.9;
-    @media(min-width: 767px){
+    @media (min-width: 767px) {
       padding: 0 58px 20px 0;
     }
     @media (min-width: 1200px) {
@@ -27,7 +27,7 @@
     padding-top: 24px;
     text-align: center;
     @include page-text(14);
-    @media(min-width: 767px){
+    @media (min-width: 767px) {
       text-align: right;
     }
     @media (min-width: 1200px) {
@@ -41,16 +41,16 @@
     width: vw(189);
     min-width: 189px;
     padding-top: 20px;
-    @media(min-width: 767px){
+    @media (min-width: 767px) {
       padding-top: 0;
     }
   }
-  &__decoration{
+  &__decoration {
     z-index: -3;
     position: absolute;
     bottom: -220px;
     width: 100%;
-    @media(min-width: 1200px){
+    @media (min-width: 1200px) {
       bottom: vw(-100);
     }
   }
