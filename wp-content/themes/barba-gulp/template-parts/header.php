@@ -1,10 +1,12 @@
 <header id="main-header" class="main-header site-header">
   <div class="header d-flex flex-row align-items-center justify-content-between">
-    <img src="<?php images()?>/dist/img/logo.svg" alt="" class="header__logo">
+    <a href="/" class="header__logo-wrap">
+      <img src="<?php images()?>/dist/img/logo.svg" alt="" class="header__logo">
+    </a>
     <div class="header__options">
       <a href="/#about" class="header__option">O projekcie</a>
       <a href="/?page_id=29" class="header__option">Raport</a>
-      <a href="?page_id=41" class="header__option">Lista sygnatariuszy</a>
+      <a href="/?page_id=41" class="header__option">Lista sygnatariuszy</a>
       <a href="/?page_id=38" class="header__option">Kontakt</a>
       <button data-popup="open" href="#" class="header__button">Podpisz apel</button>
     </div>

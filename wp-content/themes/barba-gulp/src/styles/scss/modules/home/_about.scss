@@ -24,6 +24,7 @@
     }
   }
   &__personal {
+    width: 100%;
     padding-top: 24px;
     text-align: center;
     @include page-text(14);
@@ -46,10 +47,14 @@
     }
   }
   &__decoration {
-    z-index: -3;
-    position: absolute;
-    bottom: -220px;
-    width: 100%;
+    display: none;
+    @media(min-width: 767px){
+      z-index: -3;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      display: block;
+    }
     @media (min-width: 1200px) {
       bottom: vw(-100);
     }
