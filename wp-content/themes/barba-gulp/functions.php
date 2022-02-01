@@ -50,6 +50,7 @@ if (!function_exists('fv_setup')) :
 		));
 
     add_image_size( 'news-mini', 420, 262, true );
+	add_image_size( 'raport-box', 393, 186, true );
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.

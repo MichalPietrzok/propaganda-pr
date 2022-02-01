@@ -1,6 +1,7 @@
+<?php  $info = get_field('report'); ?>
 <section class="homepage-report">
   <div class="homepage-report__header d-flex flex-row">
-    <p class="homepage-report__title">Raport</p>
+    <p class="homepage-report__title"><?= $info['report_title'] ?></p>
     <div class="homepage-report__header-cyan">
     </div>
     <div class="homepage-report__header-blue"></div>
