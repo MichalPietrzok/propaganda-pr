@@ -6,6 +6,13 @@ function add_subscriber() {
   $form_subject = trim($_POST["form_subject"]);
   $from_mail = 'michal.pietrzok@follow.vision';
 
+  $subscriber = array(
+    'apel_name' => trim($_POST["name"]),
+    'apel_email' => trim($_POST["email"])
+  );
+
+  add_row('apel_list', $subscriber, 'options');
+
   $message .= 'Nowy sygnatariusz na Stronie PR to nie propaganda';  
 
   function adopt($text) {
