@@ -282,7 +282,7 @@ if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-require get_template_directory() . '/inc/add-subscriber.php';
+require get_template_directory() . '/inc/subscriber.php';
 
 if (function_exists('acf_add_options_page')) {
 	acf_add_options_page();
