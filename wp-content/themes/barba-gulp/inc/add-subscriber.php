@@ -12,7 +12,7 @@ function add_subscriber() {
       'apel_email' => $user_mail
   );
 
-  add_row('participants', $subscriber, 'options');
+  add_row('apel', $subscriber, 'options');
 
   $message = "<p>Nowy sygnatariusz na stronie - <b>'.$project_name.'</b></p>";
   
