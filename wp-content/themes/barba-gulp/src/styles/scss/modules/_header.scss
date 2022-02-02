@@ -20,29 +20,29 @@
     @media (min-width: 1200px) {
       display: block;
     }
-  }
-  &__option {
-    margin-left: 0;
-    margin-top: 20px;
-    color: $text-color;
-    @include page-text();
-    cursor: pointer;
-    transition: border 0.5s ease-out;
-    padding-bottom: 2px;
-    border-bottom: 3px solid $light-color;
-    &:hover {
-      border-bottom: 3px solid $main-color;
-      @media (min-width: 1920px) {
-        border-bottom: vw(3) solid $main-color;
+    a {
+      margin-left: 0;
+      margin-top: 20px;
+      color: $text-color;
+      @include page-text();
+      cursor: pointer;
+      transition: border 0.5s ease-out;
+      padding-bottom: 2px;
+      border-bottom: 3px solid $light-color;
+      &:hover {
+        border-bottom: 3px solid $main-color;
+        @media (min-width: 1920px) {
+          border-bottom: vw(3) solid $main-color;
+        }
       }
-    }
-    @media (min-width: 1200px) {
-      margin-left: vw(30);
-      margin-bottom: 0;
-    }
-    @media (min-width: 1920px) {
-      padding-bottom: vw(2);
-      border-bottom: vw(3) solid $light-color;
+      @media (min-width: 1200px) {
+        margin-left: vw(30);
+        margin-bottom: 0;
+      }
+      @media (min-width: 1920px) {
+        padding-bottom: vw(2);
+        border-bottom: vw(3) solid $light-color;
+      }
     }
   }
   &__button {
@@ -76,5 +76,17 @@
     background-color: $light-color;
     padding: 50px 0;
     border-bottom: 5px solid $main-color;
+    &-options {
+      text-align: center;
+      a {
+        @include page-text();
+        color: $text-color;
+        display: block;
+        transition: border 0.5s ease-out;
+        padding-bottom: 2px;
+        border-bottom: 3px solid $light-color;
+        margin-top: 15px;
+      }
+    }
   }
 }

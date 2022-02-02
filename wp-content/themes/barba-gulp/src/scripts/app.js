@@ -1,7 +1,7 @@
 import barba from '@barba/core'
+import addSubscriber from './modules/addSubscriber'
 import AppState from './core/AppState'
 import Page from './core/Page'
-
 import Homepage from './pages/Homepage'
 import Raport from './pages/Raport'
 import Contact from './pages/Contact'
@@ -21,6 +21,10 @@ barba.init({
       },
       async once(data) {
         await delay(300)
+        const $storyForm = document.querySelector('#subscribe-form')
+        $storyForm.onsubmit = () => {
+          addSubscriber($storyForm)
+        }
         Page.firstLoading()
       }
     }
