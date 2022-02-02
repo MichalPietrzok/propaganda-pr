@@ -1,8 +1,8 @@
 <?php /* Template Name: List */
  get_header(); 
  
- $users = array_fill(0, 90, 'John Doe');
- $amount_itteration = count($users);
+  $users = get_field('apel_list', 'options');
+  $amount_itteration = count($users);
 ?>
 
 <div class="main-info" data-barba="container" data-barba-namespace="list">
@@ -16,16 +16,16 @@
           <img src="<?=images()?>paper-light.svg" alt="" class="list__paper">
           <div class="list__count d-flex flex-column justify-content-between">
             <p class="list__number"><?= $amount_itteration ?></p>
-            <p class="list__label">Osób podpisało Apel</p>
+            <p class="list__label"><?= $amount_itteration > 4  ? 'Osób' : 'Osoby' ?>  podpisało Apel</p>
           </div>
         </div>
         <button class="list__button">Podpisz apel</button>
       </div>
       <div class="list__area container container--xsamll">
         <div class="list__content row">
-          <?php 
-            
-            $block_step = ceil($amount_itteration / 4);
+          <?php
+            $block_step = $amount_itteration > 10 ? 
+              ceil($amount_itteration / 4) : $amount_itteration + 1;
             for($i = 0; $i < $amount_itteration; $i++) {
               $user_counter = 0;
               if($i % $block_step === 0) {
@@ -33,7 +33,7 @@
                 echo('<div class="col-12 col-sm-6 col-xl-3">');
                 for($j = 0; $j < $user_counter + $block_step; $j++) {
                   if($j > $user_counter - 1 && array_key_exists($j, $users)) {
-                    echo '<p class="list__item">'.($j+1).'.'.$users[$j].'</p>';
+                    echo '<p class="list__item">'.($j+1).'.'.$users[$j]['apel_name'].'</p>';
                   }
                 }
                 echo('</div>');
