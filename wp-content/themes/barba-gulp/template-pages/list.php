@@ -33,7 +33,9 @@
                 echo('<div class="col-12 col-sm-6 col-xl-3">');
                 for($j = 0; $j < $user_counter + $block_step; $j++) {
                   if($j > $user_counter - 1 && array_key_exists($j, $users)) {
-                    echo '<p class="list__item">'.($j+1).'.'.$users[$j]['apel_name'].'</p>';
+                    if($users[$j]['apel_acept']) {
+                      echo '<p class="list__item">'.($j+1).'.'.$users[$j]['apel_name'].'</p>';
+                    }
                   }
                 }
                 echo('</div>');
