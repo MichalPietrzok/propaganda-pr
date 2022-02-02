@@ -1,7 +1,7 @@
 <?php /* Template Name: List */
  get_header(); 
  
- $users = array_fill(0, 195, 'John Doe');
+ $users = array_fill(0, 90, 'John Doe');
  $amount_itteration = count($users);
 ?>
 
