@@ -1,6 +1,7 @@
 import { searchCurrentPageLink } from './utils'
 import mainHeader from './../modules/Header'
 import mainFooter from './../modules/Footer'
+import addSubscriber from './../modules/addSubscriber'
 import Popup from '../modules/Popup'
 
 export default class Page {
@@ -12,6 +13,9 @@ export default class Page {
   }
 
   static firstLoading() {
+    const $storyForm = document.querySelector('#subscribe-form')
+    $storyForm.onsubmit = () =>  addSubscriber($storyForm)
+    
     gsap.timeline()
       .to('.site', { opacity: 1 })
       .fromTo('.main-info', { opacity: 0 }, { opacity: 1 }, '+=.1')
