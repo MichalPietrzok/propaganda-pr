@@ -1,4 +1,4 @@
-const nanoMailSend = (targetForm) => {
+const addSubscriber = (targetForm) => {
   const request = new XMLHttpRequest();
   request.open('POST', ajaxurl, true);
   request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
@@ -13,4 +13,4 @@ const nanoMailSend = (targetForm) => {
   return false;
 }
 
-export default nanoMailSend
+export default addSubscriber
