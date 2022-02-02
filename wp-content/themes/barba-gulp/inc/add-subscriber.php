@@ -1,14 +1,11 @@
 <?php 
 
 function add_subscriber() {
-  
-  
   $project_name = trim($_POST["project_name"]);
   $admin_email  = trim($_POST["admin_email"]);
   $form_subject = trim($_POST["form_subject"]);
   $user_name = trim($_POST["name"]);
   $user_mail = trim($_POST["email"]);
-  $row_number = trim($_POST["acf_row"]);
 
   $subscriber =  array(
       'apel_name' => $user_name,

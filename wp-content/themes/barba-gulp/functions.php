@@ -274,7 +274,6 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
-require get_template_directory() . '/inc/add-subscriber.php';
 
 /**
  * Load Jetpack compatibility file.
@@ -282,6 +281,8 @@ require get_template_directory() . '/inc/add-subscriber.php';
 if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+require get_template_directory() . '/inc/add-subscriber.php';
 
 if (function_exists('acf_add_options_page')) {
 	acf_add_options_page();
