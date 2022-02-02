@@ -1,0 +1,38 @@
+on: 
+  push:
+    branches:
+      - dev
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+    - name: ⭐ Use Node.js 14
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - name: 🔨 Build Project
+      run: |
+        cd wp-content/themes/barba-gulp/
+        npm install
+        gulp build
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      with:
+        local-dir: ./wp-content/themes/barba-gulp/
+        server: propaganda-pr.follow.vision.ftp.dhosting.pl
+        username: ${{ secrets.ftp_username }}
+        password: ${{ secrets.ftp_password }}
+        server-dir: /public_html/wp-content/themes/barba-gulp/
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/src/**
+          .eslintrc
+          package.json
+          package-lock.json
+          gulpfile.js
