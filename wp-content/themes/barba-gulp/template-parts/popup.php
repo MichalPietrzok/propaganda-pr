@@ -14,7 +14,6 @@
             <input type="hidden" name="project_name" value="PR to nie propaganda">
             <input type="hidden" name="admin_email" value="yury.andreichuk@follow.vision">
             <input type="hidden" name="form_subject" value="Nowy signatariusz">
-            <input type="hidden" name="acf_row" value="<?= $args['current_row'] ?>">
             <!-- END Hidden Required Fields -->
             <input type="text" placeholder="Imię i nazwisko" name="name" class="page-popup__input">
             <input type="email" placeholder="E-mail" name="email" class="page-popup__input">
