@@ -18,11 +18,15 @@
     left: 0;
   }
   &__wrap {
+    width: 100%;
     background-color: $text-color;
     padding: 30px 10px;
     z-index: 12;
     position: absolute;
     transform: translateY(25%);
+    &--thanks{
+      transform: translateY(175%);
+    }
     @media (min-width: 767px) {
       padding: 50px 50px;
     }
@@ -116,6 +120,9 @@
     &:hover {
       background-color: $light-color;
       color: $main-color;
+    }
+    &:disabled {
+      opacity: .5;
     }
   }
 }
