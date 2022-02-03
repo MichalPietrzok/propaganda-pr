@@ -52,25 +52,29 @@
   }
   &__area {
     padding: 0 20px;
-    margin: 120px auto;
-    max-width: 530px;
+    margin: 50px auto;
     @media (min-width: 1200px) {
       margin: vw(120) vw(60);
-    }
-    @media (min-width: 1920px) {
-      max-width: vw(530);
     }
   }
   &__content {
     position: relative;
     padding-bottom: 50px;
-    list-style: inside decimal;
     column-count: 2;
+    text-align: center;
+    margin-bottom: 30px;
     @media (min-width: 576px) {
       column-count: 4;
+      text-align: left;
     }
     @media(min-width: 1200px){
       padding-bottom: vw(50);
+    }
+    &-list {
+      padding-bottom: 20px;
+      @media(min-width: 1200px){
+        padding-bottom: vw(50);
+      } 
     }
   }
   &__overlay{
@@ -83,7 +87,6 @@
     background: linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(255,255,255,1) 100%);
   }
   &__item {
-    list-style: inside decimal;
     @include page-text(15);
   }
   &__button {

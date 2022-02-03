@@ -1,7 +1,11 @@
 <?php /* Template Name: List */
  get_header(); 
- 
-  $users = get_field('apel_list', 'options');
+  $users = array();
+  foreach(get_field('apel_list', 'options') as $item) {
+    if ($item['apel_acept']) {
+      $users[] = $item;
+    }
+  }
   $amount_itteration = count($users);
 ?>
 
@@ -27,28 +31,26 @@
           </div>
         </div>
         <div class="col-12 col-xl-8">
-          <div class="list__area d-flex flex-column align-content-center">
-            <ol class="list__content row">
+          <div class="list__area">
+            <div class="list__content row">
               <?php
                 $block_step = $amount_itteration > 10 ? 
-                  ceil($amount_itteration / 4) : $amount_itteration + 1;
+                ceil($amount_itteration / 3) : $amount_itteration + 1;
                 for($i = 0; $i < $amount_itteration; $i++) {
                   $user_counter = 0;
                   if($i % $block_step === 0) {
                     $user_counter = $i;
-                    echo('<div class="col-12 col-sm-6 col-xl-3">');
+                    echo('<ul class="list__content-list col-12 col-sm-6 col-md-4">');
                     for($j = 0; $j < $user_counter + $block_step; $j++) {
                       if($j > $user_counter - 1 && array_key_exists($j, $users)) {
-                        if($users[$j]['apel_acept']) {
-                          echo '<p class="list__item">'.($j+1).'.'.$users[$j]['apel_name'].'</p>';
-                        }
+                        echo '<li class="list__item">'.($j + 1).'. '.$users[$j]['apel_name'].'</li>';
                       }
                     }
-                    echo('</div>');
+                    echo('</ul>');
                   }
                 }
               ?>
-            </ol>
+            </div>
             <div class="show__area d-flex flex-row justify-content-center">
               <a href="" class="list__show">Rozwiń listę</a>
             </div>
