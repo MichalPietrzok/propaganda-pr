@@ -47,7 +47,7 @@
       color: $main-color;
     }
     @media (min-width: 1200px) {
-      padding: vw(30) vw(75);
+      padding: vw(20) vw(75);
       border: vw(2) solid $main-color;
     }
   }
@@ -59,6 +59,10 @@
       @media (min-width: 1200px) {
         padding: vw(15) 0 vw(20);
         margin-bottom: 0;
+      }
+      b {
+        font-family: $bold-font;
+        text-transform: uppercase;
       }
     }
     &-img {

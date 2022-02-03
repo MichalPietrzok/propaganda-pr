@@ -133,3 +133,5 @@ export const paginationStart = (postTypeCounter) => {
     barba.go(`${location.href}${separator}start=${AppState[postTypeCounter]}`)
   }
 } 
+
+export const includesAll = (arr, values) => values.every(v => arr.includes(v))
