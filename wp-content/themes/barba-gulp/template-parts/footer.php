@@ -24,8 +24,8 @@
         <h2 class="footer__title">Do pobrania</h2>
         <ul class="footer__list">
           <li><a download href="http://propaganda-pr.follow.vision/wp-content/uploads/2022/02/pusty-pdf.pdf" class="footer__item">Raport</a></li>
-          <li><a href="#" class="footer__item">Słownik pojęć</a></li>
-          <li><a href="#" class="footer__item">Treść apelu</a></li>
+          <li><a download href="http://propaganda-pr.follow.vision/wp-content/uploads/2022/02/pusty-pdf.pdf">Słownik pojęć</a></li>
+          <li><a download href="http://propaganda-pr.follow.vision/wp-content/uploads/2022/02/pusty-pdf.pdf">Treść apelu</a></li>
         </ul>
       </div>
       <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-lg-end">
