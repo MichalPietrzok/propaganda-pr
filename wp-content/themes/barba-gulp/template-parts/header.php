@@ -40,3 +40,5 @@
 </header>
 
 <?php get_template_part('template-parts/popup') ?>
+
+<?php get_template_part('template-parts/thanks') ?>
