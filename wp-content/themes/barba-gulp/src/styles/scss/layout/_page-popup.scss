@@ -62,9 +62,11 @@
   }
   &__check {
     opacity: 0;
-    width: 25px;
-    height: 25px;
-    top: 10;
+    width: vw(22);
+    height: vw(22);
+    min-width: 22px;
+    min-height: 22px;
+    top: 2px;
     left: 0;
     position: absolute;
     cursor: pointer;
@@ -81,21 +83,26 @@
   }
   &__checkmark {
     position: absolute;
-    top: 10;
+    top: 2px;
     left: 0;
-    height: 25px;
-    width: 25px;
+    height: vw(22);
+    width: vw(22);
+    min-width: 22px;
+    min-height: 22px;
     background-color: $text-color;
     border: 1px solid $main-color;
     &::after {
       position: absolute;
       content: " ";
-      top: 6.5px;
-      right: 6.5px;
-      width: 10px;
-      height: 10px;
+      top: 5px;
+      left: 5px;
+      width: vw(10);
+      height: vw(10);
+      min-width: 10px;
+      min-height: 10px;
       background-color: $main-color;
       display: none;
+
     }
   }
   &__button {

@@ -1,6 +1,7 @@
 .homepage-report {
   width: 100%;
   &__header {
+    margin-bottom: -1px;
     position: relative;
     width: 100%;
     &-cyan {
@@ -12,6 +13,7 @@
       }
       @media (min-width: 1200px) {
         padding: vw(160) 0 vw(25) 0;
+        margin-bottom: vw(-1);
       }
     }
     &-blue {
@@ -156,6 +158,7 @@
     }
   }
   &__question {
+    z-index: 1;
     max-width: 320px;
     @include page-text();
     color: $light-color;

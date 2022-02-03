@@ -1,6 +1,8 @@
 <header id="main-header" class="main-header site-header">
   <div class="header d-flex flex-row align-items-center justify-content-between">
-    <img src="<?php images()?>/dist/img/logo.svg" alt="" class="header__logo">
+    <a href="/" class="header__logo-wrap">
+      <img src="<?php images()?>/dist/img/logo.svg" alt="" class="header__logo">
+    </a>
     <div class="header__options-wrap d-lg-flex align-items-center">
       <?php
         wp_nav_menu(array(

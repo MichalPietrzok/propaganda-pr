@@ -15,11 +15,17 @@
   }
   &__button {
     cursor: pointer;
-    padding: 30px 75px;
+    padding: 30px 60px;
     @include page-text(22, $bold-font);
     color: $main-color;
     background-color: $light-color;
-    border: none;
+    border: 4px solid $main-color;
+    transition: .5s ease-out;
+    &:hover{
+      background-color: $main-color;
+      color: $light-color;
+      border: 4px solid $light-color;
+    }
     @media (min-width: 1200px) {
       padding: vw(40) vw(140);
     }

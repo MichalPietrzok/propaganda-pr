@@ -1,6 +1,6 @@
 <section class="homepage-sign">
   <div class="homepage-sign__bar d-flex justify-content-center">
-    <button class="homepage-sign__button">Podpisz apel</button>
+    <button data-popup="open" class="homepage-sign__button">Podpisz apel</button>
   </div>
   <div class="homepage-sign__info">
     <div
@@ -13,7 +13,7 @@
           <p class="homepage-sign__label">Osób podpisało Apel</p>
         </div>
       </div>
-      <button class="homepage-sign__info-button">Zobacz listę sygnatariuszy</button>
+      <a href="/?page_id=41" class="homepage-sign__info-button">Zobacz listę sygnatariuszy</a>
     </div>
   </div>
 </section>
