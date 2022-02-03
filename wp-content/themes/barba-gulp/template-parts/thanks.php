@@ -1,8 +1,8 @@
-<div data-popup="thanks" class="page-popup">
+<div data-popup="thanks" class="page-popup align-items-center justify-content-center">
   <div data-popup="close" class="page-popup__bg"></div>
   <div class="container container--medium">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 d-flex align-items-center" style="height: 100vh">
         <div class="page-popup__wrap page-popup__wrap--thanks">
           <div class="page-popup__close-wrap d-flex justify-content-end">
             <img data-popup="close" src="<?=images()?>close.svg" alt="" class="page-popup__close">

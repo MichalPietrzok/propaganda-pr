@@ -8,8 +8,10 @@ class Popup {
     this.signButton = document.querySelector('[data-popup="sign"]')
     this.checkbox = document.querySelectorAll('input[type="checkbox"]')
     this.mainWrapper = document.querySelector(props.wrapper)
+    this.mainContent = document.querySelector('.page-popup__content')
     this.name = document.querySelector('[data-popup="name"]')
     this.email = document.querySelector('[data-popup="email"]')
+    this.animationLine = gsap.timeline()
 
     this.signButton.disabled = true
     const inputs = [this.name, this.email]
@@ -31,11 +33,24 @@ class Popup {
   }
 
   openPopup() {
-    this.mainWrapper.style.display = 'block';
+    this.signButton.disabled = true
+    this.animationLine
+      .to(this.mainWrapper, {
+        display: 'block', opacity: 1
+      })
+      .to(this.mainContent, {
+        y: 0
+      }, '-=.35')
   }
 
   closePopup() {
-    this.mainWrapper.style.display = 'none';
+    this.animationLine
+      .to(this.mainWrapper, {
+        display: 'none', opacity: 0
+      })
+      .to(this.mainContent, {
+        y: '10%'
+      }, '<')
     this.thanksPopup.style.display = 'none';
   }
 

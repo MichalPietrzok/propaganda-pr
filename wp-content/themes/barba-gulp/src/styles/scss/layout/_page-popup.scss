@@ -1,5 +1,6 @@
 .page-popup {
   display: none;
+  opacity: 0;
   width: 100%;
   overflow: scroll;
   height: 100vh;
@@ -20,6 +21,9 @@
   &__content {
     height: 100vh;
     align-items: start;
+    transform: translateY(10%);
+    position: relative;
+    z-index: 13;
     @media (min-height: 620px) {
       align-items: center;
     }
@@ -37,9 +41,6 @@
       width: vw(850);
       min-width: 850px;
       min-height: 0;
-    }
-    &--thanks{
-      transform: translateY(175%);
     }
     padding: 30px 15px;
     @media (min-width: 767px) {

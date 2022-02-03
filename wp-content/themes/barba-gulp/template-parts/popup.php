@@ -1,6 +1,6 @@
 <div class="page-popup">
-  <div data-popup="close" class="page-popup__bg"></div>
   <div class="page-popup__content d-flex justify-content-center">
+    <div data-popup="close" class="page-popup__bg"></div>
     <div class="page-popup__wrap">
       <div class="page-popup__close-wrap d-flex justify-content-end">
         <img data-popup="close" src="<?=images()?>close.svg" alt="" class="page-popup__close">

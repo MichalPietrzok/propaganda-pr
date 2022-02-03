@@ -1,6 +1,7 @@
 .homepage-about {
   position: relative;
   padding: 100px 0 100px;
+  overflow: hidden;
   @media (min-width: 1200px) {
     padding: vw(140) 0 vw(150);
   }
