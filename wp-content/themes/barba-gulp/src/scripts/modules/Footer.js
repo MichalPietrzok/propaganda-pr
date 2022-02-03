@@ -1,6 +1,7 @@
 class Footer {
   constructor() {
     this.mainWrap = document.querySelector('.site-footer')
+    this.animationLine = gsap.timeline()
   }
 
   hideAnimation() {

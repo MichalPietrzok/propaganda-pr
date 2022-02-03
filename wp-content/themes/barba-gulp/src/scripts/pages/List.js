@@ -5,23 +5,22 @@ const List = new Page({
   beforeEnter: () => {
   },
   afterEnter: () => {
-    setTimeout(() => {
-      const listWarapper = document.querySelector('[data-list="wrapper"]')
-      const listItmes = listWarapper.querySelectorAll('.list__item')
-      const showButton = document.querySelector('[data-list="button"]')
-      let itemsCount = 0
+    const listWarapper = document.querySelector('[data-list="wrapper"]')
+    const listItmes = listWarapper.querySelectorAll('.list__item')
+    const showButton = document.querySelector('[data-list="button"]')
 
-      for (let i = 0; i <= listItmes.length; i++) {
-        itemsCount++
-      }
+    const usersLimit = screen.width > 767 ? 60 : 20
+    gsap.set(showButton.parentNode, {
+      display: listItmes.length >= usersLimit
+        ? 'block' : 'none'
+    })
+    if (listItmes.length >= usersLimit) listWarapper.classList.add('limited')
 
-      itemsCount >= 1 ? showButton.style.display = 'block' : showButton.style.display = 'none'
-
-      showButton.addEventListener('click', () => {
-        listWarapper.style.maxHeight = '2000px'
-        showButton.style.display = 'none'
-      })
-    }, 0)
+    showButton.addEventListener('click', () => {
+      const animatiopn = gsap.timeline()
+        .to(listWarapper, { maxHeight: '2000', duration: 2 })
+        .to(showButton.parentNode, { display: 'none' }, '<')
+    })
   }
 })
 

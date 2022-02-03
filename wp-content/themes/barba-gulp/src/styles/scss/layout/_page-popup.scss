@@ -17,18 +17,33 @@
     top: 0;
     left: 0;
   }
+  &__content {
+    height: 100vh;
+    align-items: start;
+    @media (min-height: 620px) {
+      align-items: center;
+    }
+    @media(max-width: 992px) {
+      align-items: start;
+    }
+  }
   &__wrap {
-    width: 100%;
     background-color: $text-color;
     padding: 30px 10px;
     z-index: 12;
     position: absolute;
-    transform: translateY(25%);
+    min-height: 100vh;
+    @media(min-width: 992px) {
+      width: vw(850);
+      min-width: 850px;
+      min-height: 0;
+    }
     &--thanks{
       transform: translateY(175%);
     }
+    padding: 30px 15px;
     @media (min-width: 767px) {
-      padding: 50px 50px;
+      padding: vw(50);
     }
   }
   &__close {
@@ -38,20 +53,31 @@
     text-align: center;
     @include page-text(36, $bold-font);
     color: $light-color;
+    margin-top: 20px;
+    @media(min-width: 992px) {
+      margin-top: 0px;
+    }
   }
   &__information {
     text-align: center;
     @include page-text();
     color: $light-color;
-    padding: 15px 0;
+    padding: 10px 0 15px;
+    @media(min-width: 1200px) {
+      padding: vw(15) 0;
+    }
   }
   &__input {
     width: 100%;
-    padding: 20px 10px;
     text-align: center;
     @include page-text();
-    margin-bottom: 15px;
     border: none;
+    padding: 15px 8px;
+    margin-bottom: 15px;
+    @media(min-width: 1200px) {
+      margin-bottom: vw(15);
+      padding: vw(20) vw(10);
+    }
     &.error {
       box-shadow: 0px 0px 15px red;
     }
@@ -61,6 +87,9 @@
     text-align: center;
     color: $light-color;
     padding-bottom: 20px;
+    @media(min-width: 1200px) {
+      padding-bottom: vw(20);
+    }
   }
   &__label {
     @include page-text(12);
@@ -114,12 +143,15 @@
     }
   }
   &__button {
-    padding: 20px 75px;
     @include page-text();
-    margin-top: 30px;
+    padding: 20px 75px;
     background-color: $main-color;
     border: 2px solid $main-color;
     color: $light-color;
+    margin-top: 30px;
+    @media(min-width: 1200px) {
+      margin-top: vw(30);
+    }
     cursor: pointer;
     &:hover {
       background-color: $light-color;

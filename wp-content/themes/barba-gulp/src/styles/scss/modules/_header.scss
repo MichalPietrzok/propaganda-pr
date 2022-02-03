@@ -43,6 +43,12 @@
         padding-bottom: vw(2);
         border-bottom: vw(3) solid $light-color;
       }
+      &.active-link {
+        border-bottom: 3px solid $main-color;
+        @media (min-width: 1920px) {
+          border-bottom: vw(3) solid $main-color;
+        }
+      }
     }
   }
   &__button {
@@ -60,9 +66,10 @@
       color: $main-color;
     }
     @media (min-width: 1200px) {
-      margin-left: vw(30);
+      margin-left: 30px;
     }
     @media (min-width: 1920px) {
+      margin-left: vw(30);
       padding: vw(15) vw(20);
       border: vw(2) solid $main-color;
     }

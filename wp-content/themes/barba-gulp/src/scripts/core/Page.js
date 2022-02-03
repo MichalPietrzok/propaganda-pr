@@ -31,7 +31,7 @@ export default class Page {
 
   afterEnter() {
     searchCurrentPageLink()
-    // mainFooter.showAnimation()
+    mainFooter.showAnimation()
     const popup = new Popup({
       wrapper: '.page-popup'
     })
@@ -42,7 +42,7 @@ export default class Page {
   }
   beforeLeave() {
     gsap.timeline().to('.site-content', { opacity: 0 })
-    // mainFooter.hideAnimation()
+    mainFooter.hideAnimation()
     setTimeout(()=> {
       this.beforeLeaveFunction()
     }, 0)

@@ -1,6 +1,7 @@
 <?php /* Template Name: List */
  get_header(); 
   $users = array();
+
   foreach(get_field('apel_list', 'options') as $item) {
     if ($item['apel_acept']) {
       $users[] = $item;
@@ -33,7 +34,7 @@
         </div>
         <div class="col-12 col-xl-8">
           <div class="list__wrap">
-            <div class="list__content row">
+            <div data-list="wrapper" class="list__content row">
               <?php
                 $block_step = $amount_itteration > 10 ? 
                 ceil($amount_itteration / 3) : $amount_itteration + 1;
@@ -41,7 +42,7 @@
                   $user_counter = 0;
                   if($i % $block_step === 0) {
                     $user_counter = $i;
-                    echo('<ul data-list="wrapper" class="list__content-list col-12 col-sm-6 col-md-4">');
+                    echo('<ul class="list__content-list col-12 col-sm-6 col-md-4">');
                     for($j = 0; $j < $user_counter + $block_step; $j++) {
                       if($j > $user_counter - 1 && array_key_exists($j, $users)) {
                         echo '<li class="list__item">'.($j + 1).'. '.$users[$j]['apel_name'].'</li>';
@@ -52,7 +53,9 @@
                 }
               ?>
             </div>
-            <p data-list="button" href="" class="list__show">Rozwiń listę</p>
+            <div class="list__show-wrap">
+              <p data-list="button" class="list__show">Rozwiń listę</p>
+            </div>
           </div>
         </div>
       </div>

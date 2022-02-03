@@ -34,7 +34,7 @@
   }
   &__label {
     @include page-text(24, $bold-font);
-    padding-bottom: 50px;
+    padding-bottom: 25px;
     @media (min-width: 1200px) {
       padding-bottom: vw(50);
     }

@@ -7,8 +7,9 @@
     &-cyan {
       background-color: $cyan;
       width: 100%;
-      padding: 160px 0 25px 0;
+      padding: 100px 0 25px 0;
       @media (min-width: 992px) {
+        padding: 160px 0 25px 0;
         width: calc((100% / 3) * 2);
       }
       @media (min-width: 1200px) {
@@ -36,9 +37,10 @@
     }
   }
   &__column {
-    padding: 85px 10px 20px 10px;
     width: 100%;
+    padding: 35px 10px;
     @media (min-width: 992px) {
+      padding: 85px 10px 20px 10px;
       width: calc(100% / 3);
     }
     @media (min-width: 1200px) {

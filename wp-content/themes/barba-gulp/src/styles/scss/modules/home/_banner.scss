@@ -1,6 +1,11 @@
 .homepage-banner {
   position: relative;
   margin-top: 62px;
+  height: 100vh;
+  min-height: 460px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   @media (min-width: 1920px) {
     margin-top: vw(62);
   }

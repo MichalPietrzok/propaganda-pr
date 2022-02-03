@@ -36,7 +36,7 @@
   }
   &__button {
     @include page-text;
-    padding: 30px 75px;
+    padding: 20px 75px;
     border: 2px solid $main-color;
     background-color: $main-color;
     color: $light-color;
@@ -53,7 +53,7 @@
   }
   &__box {
     &-text {
-      padding: 15px 0 20px;
+      padding: 15px 0 30px;
       @include page-text(14);
       margin-bottom: 20px;
       @media (min-width: 1200px) {
