@@ -50,7 +50,7 @@
     @include page-text(20, $bold-font);
     color: $light-color;
   }
-  &__area {
+  &__wrap {
     padding: 0 20px;
     margin: 50px auto;
     @media (min-width: 1200px) {
@@ -71,6 +71,9 @@
       padding-bottom: vw(50);
     }
     &-list {
+      overflow: hidden;
+      height: 100%;
+      max-height: 530px;
       padding-bottom: 20px;
       @media(min-width: 1200px){
         padding-bottom: vw(50);
@@ -110,10 +113,17 @@
     }
   }
   &__show {
+    display: none;
+    margin: 0 auto;
+    width: vw(100);
+    min-width: 100px;
     @include page-text(16, $bold-font);
     color: $text-color;
     position: relative;
     cursor: pointer;
+    &--display{
+      display: block;
+    }
     &:after {
       content: " ";
       width: vw(15);

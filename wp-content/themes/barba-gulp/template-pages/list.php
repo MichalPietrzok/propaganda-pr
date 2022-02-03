@@ -21,9 +21,10 @@
             <div class="list__box d-flex flex-column align-items-center align-items-xl-start">
               <div class="list__box-top d-flex flex-xl-row flex-column align-items-center">
                 <img src="<?=images()?>paper-light.svg" alt="" class="list__paper">
-                <div class="list__count d-flex flex-column justify-content-center align-items-center justify-content-xl-between align-items-xl-start">
+                <div
+                  class="list__count d-flex flex-column justify-content-center align-items-center justify-content-xl-between align-items-xl-start">
                   <p class="list__number"><?= $amount_itteration ?></p>
-                  <p class="list__label"><?= $amount_itteration > 4  ? 'Osób' : 'Osoby' ?>  podpisało Apel</p>
+                  <p class="list__label"><?= $amount_itteration > 4  ? 'Osób' : 'Osoby' ?> podpisało Apel</p>
                 </div>
               </div>
               <button data-popup="open" class="list__button">Podpisz apel</button>
@@ -31,7 +32,7 @@
           </div>
         </div>
         <div class="col-12 col-xl-8">
-          <div class="list__area">
+          <div class="list__wrap">
             <div class="list__content row">
               <?php
                 $block_step = $amount_itteration > 10 ? 
@@ -40,7 +41,7 @@
                   $user_counter = 0;
                   if($i % $block_step === 0) {
                     $user_counter = $i;
-                    echo('<ul class="list__content-list col-12 col-sm-6 col-md-4">');
+                    echo('<ul data-list="wrapper" class="list__content-list col-12 col-sm-6 col-md-4">');
                     for($j = 0; $j < $user_counter + $block_step; $j++) {
                       if($j > $user_counter - 1 && array_key_exists($j, $users)) {
                         echo '<li class="list__item">'.($j + 1).'. '.$users[$j]['apel_name'].'</li>';
@@ -51,9 +52,7 @@
                 }
               ?>
             </div>
-            <div class="show__area d-flex flex-row justify-content-center">
-              <a href="" class="list__show">Rozwiń listę</a>
-            </div>
+            <p data-list="button" href="" class="list__show">Rozwiń listę</p>
           </div>
         </div>
       </div>
