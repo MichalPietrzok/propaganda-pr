@@ -40,7 +40,7 @@ class Popup {
       })
       .to(this.mainContent, {
         y: 0
-      }, '-=.35')
+      }, '-=.4')
   }
 
   closePopup() {
