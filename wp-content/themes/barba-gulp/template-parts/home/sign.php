@@ -23,7 +23,7 @@
           <p class="homepage-sign__label"><?= $amount_itteration > 4  ? 'Osób' : 'Osoby' ?> podpisało Apel</p>
         </div>
       </div>
-      <a href="/?page_id=41" class="homepage-sign__info-button">Zobacz listę sygnatariuszy</a>
+      <a href="<?= get_home_url() ?>/?>lista-sygnatariuszy" class="homepage-sign__info-button">Zobacz listę sygnatariuszy</a>
     </div>
   </div>
 </section>
