@@ -11,9 +11,9 @@ const List = new Page({
       const showButton = document.querySelector('[data-list="button"]')
       let itemsCount = 0
 
-      listItmes.forEach(listItem => {
+      for (let i = 0; i <= listItmes.length; i++) {
         itemsCount++
-      })
+      }
 
       itemsCount >= 1 ? showButton.style.display = 'block' : showButton.style.display = 'none'
 
