@@ -15,8 +15,8 @@
             <input type="hidden" name="admin_email" value="yury.andreichuk@follow.vision">
             <input type="hidden" name="form_subject" value="Nowy signatariusz">
             <!-- END Hidden Required Fields -->
-            <input type="text" placeholder="Imię i nazwisko" name="name" class="page-popup__input">
-            <input type="email" placeholder="E-mail" name="email" class="page-popup__input">
+            <input type="text" data-popup="name" placeholder="Imię i nazwisko" name="name" class="page-popup__input">
+            <input type="email" data-popup="email" placeholder="E-mail" name="email" class="page-popup__input">
             <p class="page-popup__subtitle">Wymagane zgody</p>
             <div class="page-popup__check-wrap d-flex">
               <input type="checkbox" name="privacy" id="" class="page-popup__check">
@@ -34,7 +34,7 @@
               <label for="public" class="page-popup__label">Wyrażam zgodę na publikację przez Związek Firm Public Relations mojego imienia i nazwiska na stronie internetowej www.prtoniepropaganda.pl (zgoda jest dobrowolna, ale wymagana do podpisania „Apelu”)* <br> <br> *Zgody obowiązkowe</label>
             </div>
             <div class="page-popup__buton-wrap d-flex justify-content-center">
-              <button class="page-popup__button">Podpisuję</button>
+              <button data-popup="sign" class="page-popup__button">Podpisuję</button>
             </div>
           </form>
         </div>

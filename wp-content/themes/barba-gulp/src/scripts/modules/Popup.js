@@ -2,7 +2,7 @@ class Popup {
   constructor(props) {
     this.openButtons = document.querySelectorAll('[data-popup="open"]')
     this.closeButtons = document.querySelectorAll('[data-popup="close"]')
-    this.thanksPopup = document.querySelector('[data-popup="thanks"]')
+    // this.thanksPopup = document.querySelector('[data-popup="thanks"]')
     this.signButton = document.querySelector('[data-popup="sign"]')
     this.checkbox = document.querySelectorAll('input[type="checkbox"]')
     this.inputs = document.querySelectorAll('input')
@@ -35,13 +35,8 @@ class Popup {
 
   closePopup() {
     this.mainWrapper.style.display = 'none';
-    this.thanksPopup.style.display = 'none';
+    // this.thanksPopup.style.display = 'none';
   }
-
-  // displayThanks() {
-  //   this.mainWrapper.style.display = 'none';
-  //   this.thanksPopup.style.display = 'block';
-  // }
 
   validation() {
     const check = Array.from(this.checkbox).every(checkbox => checkbox.checked)
