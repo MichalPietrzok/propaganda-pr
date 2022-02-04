@@ -24,7 +24,7 @@ $user_secret = $_GET['sk'];
                   <div class="verification__wrap">
                     <h2 class="verification__title">Dziękujemy</h2>
                     <p class="verification__information">Twoje dane zostały zweryfikowane !</p>
-                    <p class="verification__information">Prejdź do <a href="<?= get_home_url()?>/lista-sygnatariuszy">listy Signatariuszy</a></p>
+                    <p class="verification__information">Prejdź do <a href="<?= get_home_url()?>/lista-sygnatariuszy">listy Sygnatariuszy</a></p>
                   </div>        
                <?php }
               } else {
