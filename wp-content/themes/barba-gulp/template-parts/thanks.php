@@ -8,7 +8,7 @@
             <img data-popup="close" src="<?=images()?>close.svg" alt="" class="page-popup__close">
           </div>
           <h2 class="page-popup__title">Dziękujemy</h2>
-          <p class="page-popup__information">Podpisałeś apel,...</p>
+          <p class="page-popup__information">Jeśli nie widzisz wiadomości w skrzynce odbiorczej, sprawdź spam</p>
         </div>
       </div>
     </div>
