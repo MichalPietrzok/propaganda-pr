@@ -149,6 +149,5 @@ export const startScroll = () => {
       top: 0,
       behavior: 'instant'
     })
-    console.log('start')
   }
 }
