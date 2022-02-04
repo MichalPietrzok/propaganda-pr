@@ -33,13 +33,13 @@
         </div>
         <div class="col-12 col-sm-6 col-lg-3 d-flex align-items-start justify-content-lg-end">
           <div class="footer__links d-flex flex-row align-items-center">
-            <a href="https://www.facebook.com/ZwiazekFirmPR"
+            <a target="_blank" href="https://www.facebook.com/ZwiazekFirmPR"
               class="footer__link d-flex align-items-center justify-content-center"><img class="footer__link-img"
                 src="<?=images()?>facebook.svg" alt=""></a>
-            <a href="https://twitter.com/zfprpl"
+            <a target="_blank" href="https://twitter.com/zfprpl"
               class="footer__link d-flex align-items-center justify-content-center"><img class="footer__link-img"
                 src="<?=images()?>twitter.svg" alt=""></a>
-            <a href="https://pl.linkedin.com/company/zwiazek-firm-public-relations"
+            <a target="_blank" href="https://pl.linkedin.com/company/zwiazek-firm-public-relations"
               class="footer__link d-flex align-items-center justify-content-center"><img class="footer__link-img"
                 src="<?=images()?>linkedin.svg" alt=""></a>
           </div>
@@ -53,7 +53,7 @@
         <div class="col-12 d-flex flex-column align-items-center justify-content-center flex-md-row justify-content-md-between">
           <p class="footer__copy-rights"> &copy; ZFPR 2022. All Right reserved. <a class="footer__copy-rights"
               href="<?= get_home_url() ?>/polityka-prywatnosci">Polityka prywatności</a></p>
-          <p class="footer__copy-rights">Realizacja: FollowVison</p>
+          <p class="footer__copy-rights">Realizacja: <a class="footer__copy-rights" target="_blank" href="https://follow.vision">FollowVison</a></p>
         </div>
       </div>
     </div>
