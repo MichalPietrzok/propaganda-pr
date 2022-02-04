@@ -37,7 +37,7 @@ function add_subscriber() {
     'Reply-To: '.$from_mail.'' . PHP_EOL;
     
     mail($admin_email, adopt($form_subject), $message, $headers );
-    mail($user_email, adopt($form_subject), $message, $headers );
+    mail($user_email, adopt($form_subject), $user_message, $headers );
   }
 }
 
