@@ -23,7 +23,7 @@
         </g>
       </svg>
     </button>
-    <div class="header__mobile">
+    <div class="header__mobile" style="display: none">
       <div class="header__mobile-wrap d-flex flex-column align-items-center">
         <button data-popup="open" href="#" class="header__button header__button--mobile">Podpisz apel</button>
         <?php
