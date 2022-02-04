@@ -43,6 +43,7 @@ export default class Page {
   beforeLeave() {
     gsap.timeline().to('.site-content', { opacity: 0 })
     mainFooter.hideAnimation()
+    mainHeader.closeMenu()
     setTimeout(()=> {
       this.beforeLeaveFunction()
     }, 0)
