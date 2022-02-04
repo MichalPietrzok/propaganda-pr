@@ -7,10 +7,11 @@
       </div>
       <h2 class="page-popup__title">Podpisz apel</h2>
       <p class="page-popup__information">Podpisując nasz apel sprzeciwiasz się nadużyciom, które negatywnie wpływają na wizerunek branży PR. Bo PR to nie propaganda! </p>
+      <a data-popup="close" href="<?= get_home_url()?>/#apel" class="page-popup__link d-block">Zobacz Apel</a>
       <form class="page-popup__form" id="subscribe-form">
         <!-- Hidden Required Fields -->
         <input type="hidden" name="project_name" value="PR to nie propaganda">
-        <input type="hidden" name="admin_email" value="yury.andreichuk@follow.vision">
+        <input type="hidden" name="admin_email" value="info@zfpr.pl">
         <input type="hidden" name="form_subject" value="Nowy signatariusz">
         <!-- END Hidden Required Fields -->
         <input type="text" data-popup="name" placeholder="Imię i nazwisko" name="name" class="page-popup__input">

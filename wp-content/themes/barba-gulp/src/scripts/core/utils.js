@@ -92,7 +92,7 @@ export const searchCurrentPageLink = () => {
     } else {
       link.classList.remove('active-link')
     }
-    if (location.href === link.href) {
+    if (location.href === link.href && !link.href.includes('#')) {
       link.style.pointerEvents = 'none'
     } else {
       link.style.pointerEvents = 'all'
@@ -135,3 +135,20 @@ export const paginationStart = (postTypeCounter) => {
 } 
 
 export const includesAll = (arr, values) => values.every(v => arr.includes(v))
+
+export const startScroll = () => {
+  if (location.hash) {
+    const targetSection = document.querySelector(location.hash)
+    const scrollIndent = targetSection ? getCoords(targetSection).top : 0
+    window.scrollTo({
+      top: scrollIndent,
+      behavior: 'instant'
+    })
+  } else {
+    window.scrollTo({
+      top: 0,
+      behavior: 'instant'
+    })
+    console.log('start')
+  }
+}

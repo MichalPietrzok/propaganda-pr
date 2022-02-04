@@ -1,6 +1,6 @@
 <?php $info = get_field('project'); ?>
 
-<section class="homepage-about" id="about">
+<section class="homepage-about" id="o-projekcie">
   <div class="container container--small">
     <h2 class="homepage-about__title"><?= $info['project_title'] ?></h2>
     <div class="row">

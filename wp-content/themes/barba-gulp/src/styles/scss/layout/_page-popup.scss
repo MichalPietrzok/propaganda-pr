@@ -52,7 +52,7 @@
   }
   &__title {
     text-align: center;
-    @include page-text(36, $bold-font);
+    @include page-text(34, $bold-font);
     color: $light-color;
     margin-top: 20px;
     @media(min-width: 992px) {
@@ -60,12 +60,22 @@
     }
   }
   &__information {
+    @include page-text(17);
     text-align: center;
-    @include page-text();
     color: $light-color;
-    padding: 10px 0 15px;
+    padding: 8px 0;
     @media(min-width: 1200px) {
-      padding: vw(15) 0;
+      padding: vw(10) 0 vw(3);
+    }
+  }
+  &__link {
+    @include page-text(18, $bold-font);
+    text-decoration: underline;
+    text-align: center;
+    color: $main-color;
+    margin-bottom: 10px;
+    @media(min-width: 1920px) {
+      margin-bottom: vw(10);
     }
   }
   &__input {

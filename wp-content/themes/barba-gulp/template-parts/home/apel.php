@@ -1,6 +1,6 @@
 <?php  $info = get_field('apel'); ?>
 
-<section class="homepage-apel">
+<section id="apel" class="homepage-apel">
   <div class="container container--small">
     <h2 class="homepage-apel__title"><?= $info['apel_title'] ?></h2>
     <div class="row">

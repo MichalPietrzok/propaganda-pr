@@ -1,4 +1,4 @@
-import { searchCurrentPageLink } from './utils'
+import { searchCurrentPageLink, startScroll } from './utils'
 import mainHeader from './../modules/Header'
 import mainFooter from './../modules/Footer'
 import addSubscriber from './../modules/addSubscriber'
@@ -13,6 +13,7 @@ export default class Page {
   }
 
   static firstLoading() {
+    startScroll()
     const $storyForm = document.querySelector('#subscribe-form')
     $storyForm.onsubmit = () =>  addSubscriber($storyForm)
     
@@ -22,10 +23,7 @@ export default class Page {
   }
 
   beforeEnter() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'instant'
-    })
+    startScroll()
     this.beforeEnterFunction()
   }
 

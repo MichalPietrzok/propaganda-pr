@@ -12,7 +12,7 @@
           'menu_class'      => 'header__options d-none d-xl-flex justify-content-between'
         ));
       ?>
-      <button data-popup="open" href="#" class="header__button d-none d-xl-inline-block">Podpisz apel</button>
+      <button data-popup="open" class="header__button d-none d-xl-inline-block">Podpisz apel</button>
     </div>
     <button class="burger d-flex d-xl-none align-items-center justify-content-center" id="nav-button">
       <svg class="burger__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="14.502" viewBox="0 0 16 14.502">
