@@ -13,8 +13,8 @@ function add_subscriber() {
     'apel_email' => $user_email,
     'apel_secret' => $secret_key
   );
-
-
+  
+  
   $search_email = array_search($user_email, array_column(get_field('apel_list', 'options'), 'apel_email'));
   if ($search_email === false) {
     add_row('apel_list', $subscriber, 'options');
@@ -22,8 +22,8 @@ function add_subscriber() {
     $user_message .= '<table>
       <tr>
         <td style="font-family: Arial; font-weight: 400; color: #000000;">
-          Aby potwierdzić podpisanie Apelu 
-          <a href="'.get_home_url().'/potwierdzenie-adresu?user='.$user_email.'&sk='.$user_email.'">potwierdź swój adres mailowy</a>
+          Aby podpisać Apel 
+          <a href="'.get_home_url().'/potwierdzenie-adresu?user='.$user_email.'&sk='.$secret_key.'"> potwierdź swój adres mailowy</a>
         </td>
       </tr>
     </table>';

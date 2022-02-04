@@ -1,0 +1,23 @@
+.verification {
+  &__wrap {
+    background: $text-color;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+    @media(min-width: 1920px) {
+      padding: vw(50);
+    }
+  }
+  &__title {
+    @include page-text(25, $bold-font);
+    color: $light-color;
+  }
+  &__information {
+    @include page-text(18);
+    color: $light-color;
+    margin: 10px 0;
+    a {
+      color: $main-color;
+    }
+  }
+}

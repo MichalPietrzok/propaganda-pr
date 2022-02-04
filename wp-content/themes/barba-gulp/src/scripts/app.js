@@ -8,6 +8,7 @@ import Error from './pages/Error'
 import Posts from './pages/Posts'
 import List from './pages/List'
 import Policy from './pages/Policy'
+import Verification from './pages/Verification'
 import { delay } from './core/utils'
 
 barba.init({
@@ -32,6 +33,7 @@ barba.init({
     List,
     Policy,
     Error,
+    Verification,
     ...Posts
   ]
 })

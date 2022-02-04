@@ -67,6 +67,10 @@
     @media(min-width: 1200px) {
       padding: vw(10) 0 vw(3);
     }
+    a {
+      color: $main-color;
+      text-decoration: underline;
+    }
   }
   &__link {
     @include page-text(18, $bold-font);
