@@ -4,6 +4,8 @@ function add_subscriber() {
   $project_name = trim($_POST["project_name"]);
   $admin_email  = trim($_POST["admin_email"]);
   $form_subject = trim($_POST["form_subject"]);
+
+  $user_form_subject = 'Podpisanie Apelu';
   $user_name = trim($_POST["name"]);
   $user_email = trim($_POST["email"]);
   $from_mail = 'michal.pietrzok@follow.vision';
@@ -37,7 +39,7 @@ function add_subscriber() {
     'Reply-To: '.$from_mail.'' . PHP_EOL;
     
     mail($admin_email, adopt($form_subject), $message, $headers );
-    mail($user_email, adopt($form_subject), $user_message, $headers );
+    mail($user_email, adopt($user_form_subject), $user_message, $headers );
   }
 }
 

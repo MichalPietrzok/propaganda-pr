@@ -12,7 +12,7 @@
         <!-- Hidden Required Fields -->
         <input type="hidden" name="project_name" value="PR to nie propaganda">
         <input type="hidden" name="admin_email" value="info@zfpr.pl">
-        <input type="hidden" name="form_subject" value="Nowy signatariusz">
+        <input type="hidden" name="form_subject" value="Nowy Sygnatariusz">
         <!-- END Hidden Required Fields -->
         <input type="text" data-popup="name" placeholder="Imię i nazwisko" name="name" class="page-popup__input">
         <input type="email" data-popup="email" placeholder="E-mail" name="email" class="page-popup__input">
