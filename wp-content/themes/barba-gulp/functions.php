@@ -286,7 +286,7 @@ require get_template_directory() . '/inc/subscriber.php';
 
 if (function_exists('acf_add_options_page')) {
 	acf_add_options_page();
-  acf_set_options_page_menu('Options');
+  acf_set_options_page_menu('Lista-sygnatariuszy');
 }
 
 
