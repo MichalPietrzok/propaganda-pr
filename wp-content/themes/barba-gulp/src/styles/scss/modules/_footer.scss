@@ -65,7 +65,7 @@
   }
   &__copy-rights {
     text-align: center;
-    @include page-text();
+    @include page-text(13);
     color: $light-color;
   }
   &__address {
@@ -85,24 +85,24 @@
   }
   &__link {
     margin-left: 15px;
-    width: vw(30);
-    height: vw(30);
-    min-width: 30px;
-    min-height: 30px;
+    width: vw(40);
+    height: vw(40);
+    min-width: 40px;
+    min-height: 40px;
     &:first-of-type {
       margin-left: 0;
     }
     &-img {
-      width: vw(25);
-      height: vw(25);
-      min-width: 25px;
-      min-height: 25px;
+      width: vw(35);
+      height: vw(35);
+      min-width: 35px;
+      min-height: 35px;
       transition: 0.2s ease-out;
       &:hover {
-        width: vw(30);
-        height: vw(30);
-        min-width: 30px;
-        min-height: 30px;
+        width: vw(40);
+        height: vw(40);
+        min-width: 40px;
+        min-height: 40px;
       }
     }
   }
