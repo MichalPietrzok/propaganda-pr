@@ -21,9 +21,12 @@
     @media (min-width: 1200px) {
       margin-right: vw(100);
     }
-    p { 
+    p {
       @include page-text(20);
       color: $gray;
+      @media (max-width: 1400px) {
+        font-size: 18px;
+      }
     }
   }
   &__desc {

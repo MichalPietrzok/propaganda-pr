@@ -1,9 +1,5 @@
 .footer {
-  padding: 85px 0;
-  background-color: $text-color;
-  @media (min-width: 1920px) {
-    padding: vw(85) 0;
-  }
+  background-color: $footer-gray;
   &__title {
     @include page-text();
     color: $light-color;
@@ -16,6 +12,20 @@
     }
     @media (min-width: 1200px) {
       padding-bottom: vw(30);
+    }
+  }
+  &__top {
+    padding: 80px 0 50px;
+    background-color: $footer-gray;
+    @media (min-width: 1920px) {
+      padding: vw(80) 0 vw(50);
+    }
+  }
+  &__bottom {
+    background-color: $text-color;
+    padding: 25px 0;
+    @media (min-width: 1920px) {
+      padding: vw(25) 0;
     }
   }
   &__logo {
@@ -54,6 +64,7 @@
     }
   }
   &__copy-rights {
+    text-align: center;
     @include page-text();
     color: $light-color;
   }
@@ -70,6 +81,29 @@
     display: none;
     @media (min-width: 576px) {
       display: block;
+    }
+  }
+  &__link {
+    margin-left: 15px;
+    width: vw(30);
+    height: vw(30);
+    min-width: 30px;
+    min-height: 30px;
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &-img {
+      width: vw(25);
+      height: vw(25);
+      min-width: 25px;
+      min-height: 25px;
+      transition: 0.2s ease-out;
+      &:hover {
+        width: vw(30);
+        height: vw(30);
+        min-width: 30px;
+        min-height: 30px;
+      }
     }
   }
 }

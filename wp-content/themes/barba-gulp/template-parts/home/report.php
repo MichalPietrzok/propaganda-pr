@@ -10,7 +10,7 @@
     <div class="homepage-report__row d-flex flex-column flex-lg-row ">
       <div class="homepage-report__column homepage-report__column--yellow d-flex flex-column align-items-center">
         <p class="homepage-report__subject">Jakie jest twoje ogólne skojarzenie z branżą PR?</p>
-        <img src="<?=images()?>diagram.png" alt="" class="homepage-report__diagram">
+        <img src="<?=images()?>graph1.svg" alt="" class="homepage-report__diagram">
         <p class="homepage-report__caption">Badanie ilościowe CAWI zrealizowane na grupie 850 zamieszkałych w Polsce
           osób w wieku 18–65 lat. Próba reprezentatywna, odzwierciedlająca strukturę populacji pod względem wieku, płci,
           miejsca zamieszkania i wykształcenia.</p>
