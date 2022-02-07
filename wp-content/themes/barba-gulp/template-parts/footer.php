@@ -25,10 +25,10 @@
           <h2 class="footer__title">Do pobrania</h2>
           <ul class="footer__list">
             <li><a target="_blank" download
-                href="http://propaganda-pr.follow.vision/wp-content/uploads/2022/02/pusty-pdf.pdf"
+                href="<?= get_template_directory_uri() ?>/dist/files/raport.pdf"
                 class="footer__item">Raport</a></li>
             <li><a target="_blank" download
-                href="http://propaganda-pr.follow.vision/wp-content/uploads/2022/02/pusty-pdf.pdf">Treść apelu</a></li>
+                href="<?= get_template_directory_uri() ?>/dist/files/apel_branzy_pr.pdf">Treść apelu</a></li>
           </ul>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 d-flex align-items-start justify-content-lg-end">

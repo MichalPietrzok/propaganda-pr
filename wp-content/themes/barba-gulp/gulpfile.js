@@ -157,6 +157,9 @@ exports.img = img
 const fonts = () => src('./src/fonts/**/*').pipe(dest('dist/fonts'))
 exports.fonts = fonts
 
+const files = () => src('./src/files/**/*').pipe(dest('dist/files'))
+exports.files = files
+
 // delete cache and dist folder
 const clear = () => cache.clearAll()
 exports.clear = clear
@@ -166,15 +169,16 @@ const live = () => {
   watch('src/styles/**/*.scss', parallel(cssLibs, styles))
   watch('src/img/**/*', img)
   watch('src/fonts/**/*', fonts)
+  watch('src/files/**/*', files)
   watch('./**/*.php', { usePolling: true }).on('change', browserSync.reload)
 }
 exports.live = live
 
 exports.build = series(
-  parallel(cssLibs, styles, js, img, fonts)
+  parallel(cssLibs, styles, js, img, fonts, files)
 )
 
 exports.default = series(
-  parallel(cssLibs, styles, js, img, fonts),
+  parallel(cssLibs, styles, js, img, fonts, files),
   parallel(live, browsersync)
 )
