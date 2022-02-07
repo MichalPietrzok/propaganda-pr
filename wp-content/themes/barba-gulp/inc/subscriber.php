@@ -24,11 +24,12 @@ function add_subscriber() {
     $user_message .= '<table>
       <tr>
         <td style="font-family: Arial; font-weight: 400; color: #000000;">
-          Dzień dobry,<br>
-          Aby Twój podpis pod apelem branży PR był widoczny na stronie www.prtoniepropaganda.pl,<br>
-          wymagane jest potwierdzenie adresu e-mail poprzez kliknięcie w <a href="'.get_home_url().'/potwierdzenie-adresu?user='.$user_email.'&sk='.$secret_key.'">ten link. </a> <br><br>
-          Pozdrawiamy <br>
-          Związek Firm Public Relations <br>
+          <p style="font-family: Arial; font-weight: 400; color: #000000;"> Dzień dobry, </p>
+          <p style="font-family: Arial; font-weight: 400; color: #000000;">Aby Twój podpis pod apelem branży PR był widoczny na stronie www.prtoniepropaganda.pl,</p>
+          <p style="font-family: Arial; font-weight: 400; color: #000000;">wymagane jest potwierdzenie adresu e-mail poprzez kliknięcie w <a href="'.get_home_url().'/potwierdzenie-adresu?user='.$user_email.'&sk='.$secret_key.'">ten link. </a></p>
+          <br>
+          <p style="font-family: Arial; font-weight: 400; color: #000000;">Pozdrawiamy </p>
+          <p style="font-family: Arial; font-weight: 400; color: #000000;">Związek Firm Public Relations </p>
           <a href="https://zfpr.pl/" target="_blank">www.zfpr.pl</a>
         </td>
       </tr>
