@@ -24,8 +24,11 @@ function add_subscriber() {
     $user_message .= '<table>
       <tr>
         <td style="font-family: Arial; font-weight: 400; color: #000000;">
-          Aby podpisać Apel 
-          <a href="'.get_home_url().'/potwierdzenie-adresu?user='.$user_email.'&sk='.$secret_key.'"> potwierdź swój adres mailowy</a>
+          Dzień dobry, <br>
+          Aby Twój podpis pod apelem branży PR był widoczny na stronie www.prtoniepropaganda.pl, wymagane jest <a href="'.get_home_url().'/potwierdzenie-adresu?user='.$user_email.'&sk='.$secret_key.'"> potwierdzenie adresu e-mail.</a> <br><br>        
+          Pozdrawiamy <br>
+          Związek Firm Public Relations <br>
+          ul. Czerska 8/10 | 00-732 Warszawa | t. +48 22 555 33 30 | NIP: 951-20-04-715
         </td>
       </tr>
     </table>';
