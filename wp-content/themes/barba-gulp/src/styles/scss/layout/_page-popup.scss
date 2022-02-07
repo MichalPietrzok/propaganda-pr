@@ -76,6 +76,18 @@
       text-decoration: underline;
     }
   }
+  &__alert {
+    @include page-text(12);
+    color: $main-color;
+    &-wrap {
+      margin-bottom: 5px;
+      height: vw(35);
+      min-height: 35px;
+      @media(min-width: 576px) {
+        min-height: 20px;
+      }
+    }
+  }
   &__link {
     @include page-text(18, $bold-font);
     text-decoration: underline;

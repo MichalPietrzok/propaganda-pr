@@ -12,6 +12,7 @@ class Popup {
     this.name = document.querySelector('[data-popup="name"]')
     this.email = document.querySelector('[data-popup="email"]')
     this.animationLine = gsap.timeline()
+    this.users = []
 
     this.signButton.disabled = true
     const inputs = [this.name, this.email]
@@ -30,6 +31,16 @@ class Popup {
     this.closeButtons.forEach(button => {
       button.addEventListener('click', () => { this.closePopup() })
     })
+    this.getusers()
+  }
+
+  getusers() {
+    const $wrap = document.querySelector('[data-popup="users"]')
+    const $users = $wrap.querySelectorAll('p')
+    $users.forEach($user => {
+      this.users.push($user.innerText)
+    })
+    $wrap.parentNode.removeChild($wrap)
   }
 
   openPopup() {
@@ -57,7 +68,14 @@ class Popup {
   validation() {
     const check = Array.from(this.checkbox).every(checkbox => checkbox.checked)
     const name = this.name.value.length >= 3
-    const email = this.email.value.length > 8 && includesAll(this.email.value, ['@', '.'])
+    let email = this.email.value.length > 8 && includesAll(this.email.value, ['@', '.'])
+    const $err = this.mainWrapper.querySelector('[data-popup="email-error"]')
+    if (this.users.includes(this.email.value)) {
+      email = false
+      $err.style.display = 'block'
+    } else {
+      $err.style.display = 'none'
+    }
     const val = { name, email, check }
     const keys = Object.keys(val)
     const errors = keys.filter(key => val[key] === false)

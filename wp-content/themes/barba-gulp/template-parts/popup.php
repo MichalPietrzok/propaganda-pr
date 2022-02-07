@@ -1,4 +1,12 @@
 <div class="page-popup">
+  <div data-popup="users" class="page-popup__users d-none">
+    <?php 
+      $users = get_field('apel_list', 'options');
+      foreach($users as $row) {
+        echo '<p>'.$row['apel_email'].'</p>';
+      }
+    ?>
+  </div>
   <div class="page-popup__content d-flex justify-content-center">
     <div data-popup="close" class="page-popup__bg"></div>
     <div class="page-popup__wrap">
@@ -16,6 +24,9 @@
         <!-- END Hidden Required Fields -->
         <input type="text" data-popup="name" placeholder="Imię i nazwisko" name="name" class="page-popup__input">
         <input type="email" data-popup="email" placeholder="E-mail" name="email" class="page-popup__input">
+        <div class="page-popup__alert-wrap">
+          <p data-popup="email-error" class="page-popup__alert" style="display: none">Ten adres e-mail wykorzystano już wcześniej do podpisania apelu </p>
+        </div>
         <p class="page-popup__subtitle">Wymagane zgody</p>
         <div class="page-popup__check-wrap d-flex">
           <input id="privacy" type="checkbox" name="privacy" id="" class="page-popup__check">
