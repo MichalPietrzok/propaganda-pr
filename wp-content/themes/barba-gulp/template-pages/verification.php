@@ -24,14 +24,14 @@ $user_secret = $_GET['sk'];
                   <div class="verification__wrap">
                     <h2 class="verification__title">Dziękujemy za podpisanie apelu!</h2>
                     <p class="verification__information">Twoje dane zostały poprawnie zweryfikowane.</p>
-                    <p class="verification__information">Prejdź do <a href="<?= get_home_url()?>/lista-sygnatariuszy">Listy Sygnatariuszy</a></p>
+                    <p class="verification__information">Przejdź do <a href="<?= get_home_url()?>/lista-sygnatariuszy">Listy Sygnatariuszy</a></p>
                   </div>        
                <?php }
               } else {
                 ?>
                   <div class="verification__wrap">
                     <h2 class="verification__title">Coś poszło nie tak...</h2>
-                    <p class="verification__information">Prejdź do <a href="<?= get_home_url()?>">Strony głównej</a></p>
+                    <p class="verification__information">Przejdź do <a href="<?= get_home_url()?>">Strony głównej</a></p>
                     <p class="verification__information">Albo skontaktuj się z nami <a href="mailto:info@zfpr.pl">info@zfpr.pl</a></p>
                   </div>
                 <?php 

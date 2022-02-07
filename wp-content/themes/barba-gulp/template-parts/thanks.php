@@ -12,9 +12,9 @@
             wysłany na podany adres e-mail.
           </p>
           <p class="page-popup__information">Jeżeli nie widzisz wiadomości w skrzynce odbiorczej, prosimy o sprawdzenie
-            folderu spam
+            folderu spam.
           </p>
-          <p class="page-popup__information">Żeby skontaktować się znami napisz na <a
+          <p class="page-popup__information">Żeby skontaktować się z nami napisz na <a
               href="mailto:info@zfpr.pl">info@zfpr.pl</a></p>
         </div>
       </div>
