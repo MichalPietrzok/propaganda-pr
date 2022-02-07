@@ -10,7 +10,7 @@
 ?>
 <section class="homepage-sign">
   <div class="homepage-sign__bar d-flex justify-content-center">
-    <button data-popup="open" class="homepage-sign__button">Podpisz apel</button>
+    <button data-popup="open" class="homepage-sign__button">Podpisz Apel</button>
   </div>
   <div class="homepage-sign__info">
     <div
@@ -20,10 +20,10 @@
         <div
           class="homepage-sign__people-count d-flex flex-column align-items-center align-items-sm-start justify-content-between">
           <p class="homepage-sign__number"><?= $amount_itteration ?></p>
-          <p class="homepage-sign__label"><?= $amount_itteration > 4  ? 'Osób' : 'Osoby' ?> podpisało Apel</p>
+          <p class="homepage-sign__label">Liczba Sygnatariuszy</p>
         </div>
       </div>
-      <a href="<?= get_home_url() ?>/lista-sygnatariuszy" class="homepage-sign__info-button">Zobacz listę Sygnatariuszy</a>
+      <a href="<?= get_home_url() ?>/lista-sygnatariuszy" class="homepage-sign__info-button">Zobacz</a>
     </div>
   </div>
 </section>

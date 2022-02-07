@@ -5,7 +5,7 @@
       <div class="page-popup__close-wrap d-flex justify-content-end">
         <img data-popup="close" src="<?=images()?>close.svg" alt="" class="page-popup__close">
       </div>
-      <h2 class="page-popup__title">Podpisz apel</h2>
+      <h2 class="page-popup__title">Podpisz Apel</h2>
       <p class="page-popup__information">Podpisując nasz apel sprzeciwiasz się nadużyciom, które negatywnie wpływają na wizerunek branży PR. Bo PR to nie propaganda! </p>
       <a data-popup="close" href="<?= get_home_url()?>/#apel" class="page-popup__link d-block">Zobacz Apel</a>
       <form class="page-popup__form" id="subscribe-form">

@@ -25,10 +25,10 @@
                 <div
                   class="list__count d-flex flex-column justify-content-center align-items-center justify-content-xl-between align-items-xl-start">
                   <p class="list__number"><?= $amount_itteration ?></p>
-                  <p class="list__label"><?= $amount_itteration > 4  ? 'Osób' : 'Osoby' ?> podpisało Apel</p>
+                  <p class="list__label">Liczba Sygnatariuszy</p>
                 </div>
               </div>
-              <button data-popup="open" class="list__button">Podpisz apel</button>
+              <button data-popup="open" class="list__button">Podpisz Apel</button>
             </div>
           </div>
         </div>

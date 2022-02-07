@@ -67,14 +67,14 @@
       color: $light-color;
       transition: 0.5s ease-out;
       cursor: pointer;
-      padding: 24px 25px;
+      padding: 24px 60px;
       &:hover {
         background-color: $light-color;
         color: $light-blue;
       }
       @media (min-width: 1200px) {
         border: vw(2) solid $light-blue;
-        padding: vw(24) vw(25);
+        padding: vw(24) vw(60);
       }
     }
   }

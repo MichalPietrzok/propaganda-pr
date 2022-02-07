@@ -30,6 +30,7 @@
     }
   }
   &__info {
+    line-height: 1.8;
     padding: 50px;
     @include page-text(24);
     text-align: center;
@@ -56,6 +57,7 @@
   }
   &__box {
     &-text {
+      line-height: 1.8;
       padding: 15px 0 30px;
       @include page-text(14);
       margin-bottom: 20px;
