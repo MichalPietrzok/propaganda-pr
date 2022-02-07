@@ -9,7 +9,7 @@
   <div class="homepage-report__columns">
     <div class="homepage-report__row d-flex flex-column flex-lg-row ">
       <div class="homepage-report__column homepage-report__column--yellow d-flex flex-column align-items-center">
-        <p class="homepage-report__subject">Jakie jest twoje ogólne skojarzenie z branżą PR?</p>
+        <p class="homepage-report__subject">Jakie jest twoje ogólne SKOJARZENIE z branżą PR?</p>
         <img src="<?=images()?>graph1.svg" alt="" class="homepage-report__diagram">
         <p class="homepage-report__caption">Badanie ilościowe CAWI zrealizowane na grupie 850 zamieszkałych w Polsce
           osób w wieku 18–65 lat. Próba reprezentatywna, odzwierciedlająca strukturę populacji pod względem wieku, płci,
@@ -33,7 +33,7 @@
         class="homepage-report__column homepage-report__column--blue d-flex flex-column align-items-center align-items-lg-start">
         <img src="<?=images()?>puppet.png" alt="" class="homepage-report__puppet">
         <p class="homepage-report__question">Czy kiedykolwiek ktoś z twojego bliskiego otoczenia uznał twój zawód za
-          nieetyczny?</p>
+          NIEETYCZNY?</p>
         <img src="<?=images()?>info-graph.svg" alt="" class="homepage-report__graph">
         <p class="homepage-report__caption homepage-report__caption--light">Badanie zrealizowane we wrześniu 2021 roku
           przez Związek Firm Public

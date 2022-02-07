@@ -22,9 +22,9 @@ $user_secret = $_GET['sk'];
                   update_row('apel_list', $row_number, $user, 'options');  
                 ?>
                   <div class="verification__wrap">
-                    <h2 class="verification__title">Dziękujemy</h2>
-                    <p class="verification__information">Twoje dane zostały zweryfikowane !</p>
-                    <p class="verification__information">Prejdź do <a href="<?= get_home_url()?>/lista-sygnatariuszy">listy Sygnatariuszy</a></p>
+                    <h2 class="verification__title">Dziękujemy za podpisanie apelu!</h2>
+                    <p class="verification__information">Twoje dane zostały poprawnie zweryfikowane.</p>
+                    <p class="verification__information">Prejdź do <a href="<?= get_home_url()?>/lista-sygnatariuszy">Listy Sygnatariuszy</a></p>
                   </div>        
                <?php }
               } else {

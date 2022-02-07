@@ -55,12 +55,16 @@
     @include page-text(34, $bold-font);
     color: $light-color;
     margin-top: 20px;
+    padding-bottom: 20px;
     @media(min-width: 992px) {
       margin-top: 0px;
     }
+    @media(min-width:1200px){
+      padding-bottom: vw(20);
+    }
   }
   &__information {
-    @include page-text(17);
+    @include page-text(16);
     text-align: center;
     color: $light-color;
     padding: 8px 0;

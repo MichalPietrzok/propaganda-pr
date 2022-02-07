@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-12 col-sm-6 col-lg-3">
           <h2 class="footer__title">Dane kontaktowe</h2>
-          <img src="<?=images()?>zfpr.png" alt="" class="footer__logo">
+          <img src="<?=images()?>zfpr.svg" alt="" class="footer__logo">
           <?php $adres = get_field('contact_adres', 38); ?>
           <div class="footer__address"><?= $adres['contact_adres_info'] ?></div>
         </div>

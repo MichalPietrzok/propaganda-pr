@@ -29,7 +29,9 @@
     }
   }
   &__logo {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+    min-width: 206px;
+    width: vw(206);
   }
   &__list {
     a {
