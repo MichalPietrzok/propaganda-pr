@@ -1,7 +1,7 @@
 .footer {
   background-color: $footer-gray;
   &__title {
-    @include page-text();
+    @include page-text(14);
     color: $light-color;
     text-transform: uppercase;
     padding-bottom: 25px;
@@ -15,17 +15,17 @@
     }
   }
   &__top {
-    padding: 80px 0 50px;
-    background-color: $footer-gray;
+    padding: 50px 0 65px;
+    background-color: $text-color;
     @media (min-width: 1920px) {
-      padding: vw(80) 0 vw(50);
+      padding: vw(50) 0 vw(65);
     }
   }
   &__bottom {
-    background-color: $text-color;
-    padding: 25px 0;
+    background-color: $light-color;
+    padding: 10px 0 25px;
     @media (min-width: 1920px) {
-      padding: vw(25) 0;
+      padding: vw(10) 0 vw(25);
     }
   }
   &__logo {
@@ -35,7 +35,7 @@
     a {
       display: block;
       width: auto;
-      @include page-text();
+      @include page-text(12);
       color: $light-color;
       padding-bottom: 15px;
       cursor: pointer;
@@ -65,14 +65,14 @@
   }
   &__copy-rights {
     text-align: center;
-    @include page-text(13);
-    color: $light-color;
+    @include page-text(12);
+    color: $text-color;
     a {
       text-decoration: underline;
     }
   }
   &__address {
-    @include page-text();
+    @include page-text(12);
     color: $light-color;
     line-height: 2;
     padding-top: 30px;
@@ -87,25 +87,60 @@
     }
   }
   &__link {
-    margin-left: 15px;
-    width: vw(40);
-    height: vw(40);
-    min-width: 40px;
-    min-height: 40px;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: vw(15);
+    height: vw(15);
+    min-width: 10px;
+    min-height: 10px;
     &:first-of-type {
       margin-left: 0;
     }
-    &-img {
-      width: vw(35);
-      height: vw(35);
-      min-width: 35px;
-      min-height: 35px;
-      transition: 0.2s ease-out;
-      &:hover {
-        width: vw(40);
-        height: vw(40);
-        min-width: 40px;
-        min-height: 40px;
+    @media (min-width: 576px) {
+      margin-top: 0;
+      width: vw(30);
+      height: vw(30);
+      min-width: 30px;
+      min-height: 30px;
+    }
+    @media (min-width: 992px) {
+      width: vw(40);
+      height: vw(40);
+      min-width: 40px;
+      min-height: 40px;
+      &:first-of-type {
+        margin-left: 0;
+      }
+      &-img {
+        width: vw(15);
+        height: vw(15);
+        min-width: 10px;
+        min-height: 10px;
+        transition: 0.2s ease-out;
+        @media (min-width: 576px) {
+          width: vw(25);
+          height: vw(25);
+          min-width: 20px;
+          min-height: 20px;
+          &:hover {
+            width: vw(30);
+            height: vw(30);
+            min-width: 30px;
+            min-height: 30px;
+          }
+        }
+        @media (min-width: 992px) {
+          width: vw(35);
+          height: vw(35);
+          min-width: 35px;
+          min-height: 35px;
+          &:hover {
+            width: vw(40);
+            height: vw(40);
+            min-width: 40px;
+            min-height: 40px;
+          }
+        }
       }
     }
   }

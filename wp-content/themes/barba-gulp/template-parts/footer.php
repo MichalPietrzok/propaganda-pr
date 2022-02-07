@@ -1,10 +1,10 @@
 <footer id="colophon" class="footer site-footer">
   <div class="footer__top">
-    <div class="container">
+    <div class="container container--big">
       <div class="row">
         <div class="col-12 col-sm-6 col-lg-3">
           <h2 class="footer__title">Dane kontaktowe</h2>
-          <img src="<?=images()?>zfpr.svg" alt="" class="footer__logo">
+          <img src="<?=images()?>zfpr.png" alt="" class="footer__logo">
           <?php $adres = get_field('contact_adres', 38); ?>
           <div class="footer__address"><?= $adres['contact_adres_info'] ?></div>
         </div>
@@ -48,7 +48,7 @@
     </div>
   </div>
   <div class="footer__bottom">
-    <div class="container">
+    <div class="container container--big">
       <div class="row">
         <div class="col-12 d-flex flex-column align-items-center justify-content-center flex-md-row justify-content-md-between">
           <p class="footer__copy-rights"> &copy; ZFPR 2022. All Right reserved. <a class="footer__copy-rights"
