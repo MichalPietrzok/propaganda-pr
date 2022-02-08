@@ -2,7 +2,7 @@ import { searchCurrentPageLink, startScroll } from './utils'
 import mainHeader from './../modules/Header'
 import mainFooter from './../modules/Footer'
 import addSubscriber from './../modules/addSubscriber'
-import Popup from '../modules/Popup'
+import popup from '../modules/Popup'
 
 export default class Page {
   constructor(props) {
@@ -29,10 +29,8 @@ export default class Page {
 
   afterEnter() {
     searchCurrentPageLink()
+    popup.searchOpenButtons()
     mainFooter.showAnimation()
-    const popup = new Popup({
-      wrapper: '.page-popup'
-    })
     setTimeout(()=> {
       gsap.timeline().to('.site-content', { opacity: 1 })
       this.afterEnterFunction()

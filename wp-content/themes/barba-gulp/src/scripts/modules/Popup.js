@@ -2,7 +2,6 @@ import { includesAll } from './../core/utils'
 
 class Popup {
   constructor(props) {
-    this.openButtons = document.querySelectorAll('[data-popup="open"]')
     this.closeButtons = document.querySelectorAll('[data-popup="close"]')
     this.thanksPopup = document.querySelector('[data-popup="thanks"]')
     this.signButton = document.querySelector('[data-popup="sign"]')
@@ -24,14 +23,17 @@ class Popup {
       input.addEventListener('click', () => { this.validation() })
     })
 
-    this.openButtons.forEach(button => {
-      button.addEventListener('click', () => { this.openPopup() })
-    })
-
     this.closeButtons.forEach(button => {
       button.addEventListener('click', () => { this.closePopup() })
     })
     this.getusers()
+  }
+
+  searchOpenButtons() {
+    const openButtons = document.querySelectorAll('[data-popup="open"]')
+    openButtons.forEach(button => {
+      button.addEventListener('click', () => { this.openPopup() })
+    })
   }
 
   getusers() {
@@ -93,4 +95,8 @@ class Popup {
   }
 }
 
-export default Popup
+const popup = new Popup({
+  wrapper: '.page-popup'
+})
+
+export default popup
