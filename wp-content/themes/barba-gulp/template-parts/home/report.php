@@ -26,7 +26,7 @@
             synonimu manipulacji, dezinformacji, propagandy, oszustwa czy kłamstwa</p>
           <p class="homepage-report__caption">Badanie zrealizowane we wrześniu 2021 roku przez Związek Firm Public
             Relations na grupie 187 pracowników agencji członkowskich ZFPR.</p>
-          <a download href="<?= get_template_directory_uri()?>/dist/files/Raport ZFPR_PR_to_nie_propaganda.pdf" class="homepage-report__button">Pobierz raport</a>
+          <a download href="<?= get_template_directory_uri()?>/dist/files/Raport_ZFPR_PR_to_nie_propaganda.pdf" class="homepage-report__button">Pobierz raport</a>
         </div>
       </div>
       <div
