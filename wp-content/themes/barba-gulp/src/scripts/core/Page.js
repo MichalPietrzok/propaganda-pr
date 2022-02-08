@@ -14,9 +14,11 @@ export default class Page {
 
   static firstLoading() {
     startScroll()
+    const popup = new Popup({
+      wrapper: '.page-popup'
+    })
     const $storyForm = document.querySelector('#subscribe-form')
     $storyForm.onsubmit = () =>  addSubscriber($storyForm)
-    
     gsap.timeline()
       .to('.site', { opacity: 1 })
       .fromTo('.main-info', { opacity: 0 }, { opacity: 1 }, '+=.1')
@@ -30,9 +32,6 @@ export default class Page {
   afterEnter() {
     searchCurrentPageLink()
     mainFooter.showAnimation()
-    const popup = new Popup({
-      wrapper: '.page-popup'
-    })
     setTimeout(()=> {
       gsap.timeline().to('.site-content', { opacity: 1 })
       this.afterEnterFunction()
