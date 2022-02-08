@@ -36,11 +36,13 @@ class Popup {
 
   getusers() {
     const $wrap = document.querySelector('[data-popup="users"]')
-    const $users = $wrap.querySelectorAll('p')
-    $users.forEach($user => {
-      this.users.push($user.innerText)
-    })
-    $wrap.parentNode.removeChild($wrap)
+    if ($wrap) {
+      const $users = $wrap.querySelectorAll('p')
+      $users.forEach($user => {
+        this.users.push($user.innerText)
+      })
+      $wrap.parentNode.removeChild($wrap)
+    }
   }
 
   openPopup() {
