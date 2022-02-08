@@ -58,25 +58,25 @@
     </g>
     <path id="Path_205" data-name="Path 205" d="M0,0H204.99V-223.021H0Z" transform="matrix(0.951, -0.309, 0.309, 0.951, 1367.066, 4490.299)" fill="none"/>
     <g id="Group_266" data-name="Group 266" transform="translate(-993.054 261.787)">
-      <text id="NIE_P" data-name="NIE P" transform="translate(2423.14 4202.424)" fill="#fff" font-size="18" font-family="Helvetica"><tspan x="0" y="0">NIE P</tspan></text>
-      <text id="AMIĘTAM" transform="translate(2465.617 4202.424)" fill="#fff" font-size="18" font-family="Helvetica"><tspan x="0" y="0">AMIĘTAM</tspan></text>
-      <text id="_" data-name=" " transform="translate(2546.791 4201.423)" fill="#fff" font-size="17" font-family="Helvetica"><tspan x="0" y="0"> </tspan></text>
-      <text id="_9_63_" data-name="9,63%" transform="translate(2490.617 4224.328)" fill="#fff" font-size="18" font-family="Helvetica"><tspan x="0" y="0">9,63%</tspan></text>
-      <text id="_2" data-name=" " transform="translate(2478.832 4223.328)" fill="#fff" font-size="17" font-family="Helvetica"><tspan x="0" y="0"> </tspan></text>
+      <text id="NIE_P" data-name="NIE P" transform="translate(2423.14 4202.424)" fill="#fff" font-size="18" font-family="Manrope-Bold"><tspan x="0" y="0">NIE P</tspan></text>
+      <text id="AMIĘTAM" transform="translate(2465.617 4202.424)" fill="#fff" font-size="18" font-family="Manrope-Bold"><tspan x="0" y="0">AMIĘTAM</tspan></text>
+      <text id="_" data-name=" " transform="translate(2546.791 4201.423)" fill="#fff" font-size="17" font-family="Manrope-Bold"><tspan x="0" y="0"> </tspan></text>
+      <text id="_9_63_" data-name="9,63%" transform="translate(2490.617 4224.328)" fill="#fff" font-size="18" font-family="Manrope-Bold"><tspan x="0" y="0">9,63%</tspan></text>
+      <text id="_2" data-name=" " transform="translate(2478.832 4223.328)" fill="#fff" font-size="17" font-family="Manrope-Bold"><tspan x="0" y="0"> </tspan></text>
     </g>
     <g id="Group_265" data-name="Group 265" transform="translate(-919 545.363)">
-      <text id="NIE" transform="translate(2490.095 3731.821)" fill="#fff" font-size="18" font-family="Helvetica"><tspan x="0" y="0">NIE</tspan></text>
-      <text id="_3" data-name=" " transform="translate(2518.406 3730.821)" fill="#fff" font-size="17" font-family="Helvetica"><tspan x="0" y="0"> </tspan></text>
-      <text id="_34_76_" data-name="34,76%" transform="translate(2490.095 3753.725)" fill="#fff" font-size="18" font-family="Helvetica"><tspan x="0" y="0">34,76%</tspan></text>
+      <text id="NIE" transform="translate(2490.095 3731.821)" fill="#fff" font-size="18" font-family="Manrope-Bold"><tspan x="0" y="0">NIE</tspan></text>
+      <text id="_3" data-name=" " transform="translate(2518.406 3730.821)" fill="#fff" font-size="17" font-family="Manrope-Bold"><tspan x="0" y="0"> </tspan></text>
+      <text id="_34_76_" data-name="34,76%" transform="translate(2490.095 3753.725)" fill="#fff" font-size="18" font-family="Manrope-Bold"><tspan x="0" y="0">34,76%</tspan></text>
     </g>
     <g id="Group_264" data-name="Group 264" transform="translate(-746 356.322)">
       <g id="Group" transform="translate(2068.827 4088.889)">
-        <text id="TA" transform="translate(0 19)" fill="#fff" font-size="18" font-family="Helvetica" letter-spacing="-0.02em"><tspan x="0" y="0">TA</tspan></text>
-        <text id="K" transform="translate(22.662 19)" fill="#fff" font-size="18" font-family="Helvetica" letter-spacing="-0.02em"><tspan x="0" y="0">K</tspan></text>
+        <text id="TA" transform="translate(0 19)" fill="#fff" font-size="18" font-family="Manrope-Bold" letter-spacing="-0.02em"><tspan x="0" y="0">TA</tspan></text>
+        <text id="K" transform="translate(22.662 19)" fill="#fff" font-size="18" font-family="Manrope-Bold" letter-spacing="-0.02em"><tspan x="0" y="0">K</tspan></text>
       </g>
-      <text id="_4" data-name=" " transform="translate(2102.624 4106.889)" fill="#fff" font-size="17" font-family="Helvetica"><tspan x="0" y="0"> </tspan></text>
-      <text id="_5" data-name=" " transform="translate(2102.624 4128.793)" fill="#fff" font-size="17" font-family="Helvetica"><tspan x="0" y="0"> </tspan></text>
-      <text id="_55_61_" data-name="55,61%" transform="translate(2039.557 4129.793)" fill="#fff" font-size="18" font-family="Helvetica"><tspan x="0" y="0">55,61%</tspan></text>
+      <text id="_4" data-name=" " transform="translate(2102.624 4106.889)" fill="#fff" font-size="17" font-family="Manrope-Bold"><tspan x="0" y="0"> </tspan></text>
+      <text id="_5" data-name=" " transform="translate(2102.624 4128.793)" fill="#fff" font-size="17" font-family="Manrope-Bold"><tspan x="0" y="0"> </tspan></text>
+      <text id="_55_61_" data-name="55,61%" transform="translate(2039.557 4129.793)" fill="#fff" font-size="18" font-family="Manrope-Bold"><tspan x="0" y="0">55,61%</tspan></text>
     </g>
   </g>
 </svg>
