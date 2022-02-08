@@ -25,7 +25,7 @@
           <h2 class="footer__title">Do pobrania</h2>
           <ul class="footer__list">
             <li><a target="_blank" download
-                href="<?= get_template_directory_uri() ?>/dist/files/raport.pdf"
+                href="<?= get_template_directory_uri()?>/dist/files/Raport ZFPR_PR_to_nie_propaganda.pdf"
                 class="footer__item">Raport</a></li>
             <li><a target="_blank" download
                 href="<?= get_template_directory_uri() ?>/dist/files/apel_branzy_pr.pdf">Treść apelu</a></li>
