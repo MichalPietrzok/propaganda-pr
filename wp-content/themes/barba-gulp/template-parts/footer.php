@@ -51,7 +51,7 @@
     <div class="container container--big">
       <div class="row">
         <div class="col-12 d-flex flex-column align-items-center justify-content-center flex-md-row justify-content-md-between">
-          <p class="footer__copy-rights"> &copy; ZFPR 2022. All Right reserved. <a class="footer__copy-rights"
+          <p class="footer__copy-rights"> &copy; ZFPR 2022. All Rights Reserved. <a class="footer__copy-rights"
               href="<?= get_home_url() ?>/polityka-prywatnosci">Polityka prywatności</a></p>
           <p class="footer__copy-rights">Realizacja: <a class="footer__copy-rights" target="_blank" href="https://follow.vision">FollowVison</a></p>
         </div>
