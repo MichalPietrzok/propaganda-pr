@@ -108,6 +108,9 @@
     &-caption {
       margin-left: -70px !important;
       @include page-text(16);
+      @media (min-width: 1200px) {
+        transform: translateY(-20px);
+      }
       @media (min-width: 1920px) {
         margin-left: vw(-70) !important;
         width: 300vw;
