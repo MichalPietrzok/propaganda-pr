@@ -175,35 +175,7 @@
       <div class="homepage-report__column homepage-report__column--cyan">
         <div
           class="homepage-report__percentage-wrap d-flex flex-column flex-xl-row align-items-xl-end align-items-center">
-          <svg class="homepage-report__percentage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="252" height="134.5"
-            viewBox="0 0 252 134.5">
-            <defs>
-              <clipPath id="clip-path">
-                <path id="Path_198" data-name="Path 198" d="M0,0H117.568V-117.568H0Z" fill="none" />
-              </clipPath>
-            </defs>
-            <g id="Group_424" data-name="Group 424" transform="translate(-599 -3915.5)">
-              <g id="Group_222" data-name="Group 222" transform="translate(620 4044.068)">
-                <g id="Group_221" data-name="Group 221" transform="translate(-21 -11)" clip-path="url(#clip-path)">
-                  <g id="Group_219" data-name="Group 219" transform="translate(58.784)">
-                    <path id="Path_196" data-name="Path 196"
-                      d="M0,0A58.745,58.745,0,0,1-48.831-26.048l-.8-1.2L-2.71-61.21v-56.312l1.46-.03c.416-.009.832-.016,1.25-.016A58.85,58.85,0,0,1,58.784-58.784,58.85,58.85,0,0,1,0,0M-45.536-26.527A55.756,55.756,0,0,0,0-2.983a55.865,55.865,0,0,0,55.8-55.8,55.862,55.862,0,0,0-55.528-55.8v54.9Z"
-                      fill="#ff0087" />
-                  </g>
-                  <g id="Group_220" data-name="Group 220" transform="translate(7.773 -29.551)">
-                    <path id="Path_197" data-name="Path 197"
-                      d="M0,0A58.78,58.78,0,0,1-7.773-29.233,58.617,58.617,0,0,1,7.641-68.912,58.609,58.609,0,0,1,45.447-87.753l.279,2.97A55.526,55.526,0,0,0-4.79-29.233,55.786,55.786,0,0,0,2.587-1.486Z"
-                      fill="#ff0087" />
-                  </g>
-                </g>
-              </g>
-              <text id="_65_" data-name="65%
-" transform="translate(679 3929)" font-size="86" font-family="Manrope-Bold">
-                <tspan x="0" y="66">65</tspan>
-                <tspan y="66" font-size="50.164" baseline-shift="28.663799591953868">%</tspan>
-              </text>
-            </g>
-          </svg>
+          <img src="<?=images()?>percentage.svg" alt="" class="homepage-report__percentage">
           <p class="homepage-report__percentage-caption">ankietowanych</p>
         </div>
         <div class="homeapge-report__description-wrap d-flex flex-column align-items-center">
