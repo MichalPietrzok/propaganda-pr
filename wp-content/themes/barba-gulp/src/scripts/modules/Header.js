@@ -9,10 +9,8 @@ class Header {
       this.mobileMenu.style.display === 'none' ? this.openMenu() : this.closeMenu();
     })
 
-    this.options.forEach((option) => {
-      option.addEventListener('click', () => {
-        this.closeMenu();
-      })
+    this.mobileMenu.addEventListener('click', () => {
+      this.closeMenu()
     })
   }
 
