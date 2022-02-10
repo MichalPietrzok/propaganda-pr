@@ -145,7 +145,7 @@ export const startScroll = () => {
         top: scrollIndent,
         behavior: 'instant'
       })
-    }, 400)
+    }, 750)
   } else {
     window.scrollTo({
       top: 0,
