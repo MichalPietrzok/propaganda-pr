@@ -3,14 +3,15 @@ class Header {
     this.mainWrap = document.querySelector('.header')
     this.burger = document.querySelector('.burger');
     this.mobileMenu = document.querySelector('.header__mobile');
-    this.options = document.querySelectorAll('.header__option');
 
     this.burger.addEventListener('click', () => {
       this.mobileMenu.style.display === 'none' ? this.openMenu() : this.closeMenu();
     })
 
     this.mobileMenu.addEventListener('click', () => {
-      this.closeMenu()
+      if (screen.width < 1200) {
+        this.closeMenu()
+      }
     })
   }
 
