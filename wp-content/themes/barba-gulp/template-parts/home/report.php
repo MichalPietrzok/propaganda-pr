@@ -57,31 +57,10 @@
             </g>
             <g transform="translate(257.734 -154.56)"><text transform="translate(0 22)" fill="#2b2e34" font-size="21"
                 font-family="Manrope-Bold" font-weight="800">
-                <tspan x="0" y="0">Zdec</tspan>
-              </text><text transform="translate(51.548 22)" fill="#2b2e34" font-size="21" font-family="Manrope-Bold"
-                font-weight="800">
-                <tspan x="0" y="0">y</tspan>
-              </text><text transform="translate(62.998 22)" fill="#2b2e34" font-size="21" font-family="Manrope-Bold"
-                font-weight="800">
-                <tspan x="0" y="0">do</tspan>
-              </text><text transform="translate(88.647 22)" fill="#2b2e34" font-size="21" font-family="Manrope-Bold"
-                font-weight="800">
-                <tspan x="0" y="0">w</tspan>
-              </text><text transform="translate(104.97 22)" fill="#2b2e34" font-size="21" font-family="Manrope-Bold"
-                font-weight="800">
-                <tspan x="0" y="0">anie </tspan>
+                <tspan x="0" y="0">Zdecydowanie </tspan>
               </text><text transform="translate(0 46.983)" fill="#2b2e34" font-size="21" font-family="Manrope-Bold"
                 font-weight="800">
-                <tspan x="0" y="0">po</tspan>
-              </text><text transform="translate(25.628 45.983)" fill="#2b2e34" font-size="20" font-family="Manrope-Bold"
-                font-weight="800">
-                <tspan x="0" y="0">zy</tspan>
-              </text><text transform="translate(49.258 46.983)" fill="#2b2e34" font-size="21" font-family="Manrope-Bold"
-                font-weight="800">
-                <tspan x="0" y="0">t</tspan>
-              </text><text transform="translate(58.189 46.983)" fill="#2b2e34" font-size="21" font-family="Manrope-Bold"
-                font-weight="800">
-                <tspan x="0" y="0">ywne</tspan>
+                <tspan x="0" y="0">pozytywne</tspan>
               </text></g><text transform="translate(370.426 -107.578)" fill="#2b2e34" font-size="21"
               font-family="Manrope-Bold" font-weight="800">
               <tspan x="0" y="0"> </tspan>
@@ -91,19 +70,7 @@
             </text>
             <g transform="translate(111.524 -154.013)"><text transform="translate(0 18)" fill="#2b2e34" font-size="17"
                 font-family="Manrope-Light, Manrope" font-weight="300">
-                <tspan x="0" y="0">Zdec</tspan>
-              </text><text transform="translate(39.669 17)" fill="#2b2e34" font-size="16"
-                font-family="Manrope-Light, Manrope" font-weight="300">
-                <tspan x="0" y="0">y</tspan>
-              </text><text transform="translate(48.283 17)" fill="#2b2e34" font-size="16"
-                font-family="Manrope-Light, Manrope" font-weight="300">
-                <tspan x="0" y="0">do</tspan>
-              </text><text transform="translate(68.182 17)" fill="#2b2e34" font-size="16"
-                font-family="Manrope-Light, Manrope" font-weight="300">
-                <tspan x="0" y="0">w</tspan>
-              </text><text transform="translate(80.769 18)" fill="#2b2e34" font-size="17"
-                font-family="Manrope-Light, Manrope" font-weight="300">
-                <tspan x="0" y="0">anie </tspan>
+                <tspan x="0" y="0">Zdecydowanie </tspan>
               </text><text transform="translate(25.729 37.819)" fill="#2b2e34" font-size="16"
                 font-family="Manrope-Light, Manrope" font-weight="300">
                 <tspan x="0" y="0">negatywne</tspan>
@@ -116,10 +83,7 @@
                 <tspan x="0" y="0">3%</tspan>
               </text><text transform="translate(36.104 49.402)" fill="#2b2e34" font-size="17"
                 font-family="Manrope-Light, Manrope" font-weight="300">
-                <tspan x="0" y="0">Racz</tspan>
-              </text><text transform="translate(74.35 49.402)" fill="#2b2e34" font-size="17"
-                font-family="Manrope-Light, Manrope" font-weight="300">
-                <tspan x="0" y="0">ej </tspan>
+                <tspan x="0" y="0">Raczej </tspan>
               </text><text transform="translate(0 69.221)" fill="#2b2e34" font-size="16"
                 font-family="Manrope-Light, Manrope" font-weight="300">
                 <tspan x="0" y="0">negatywne</tspan>
@@ -132,22 +96,10 @@
             </text>
             <g transform="translate(313.047 -39.157)"><text transform="translate(0 22)" fill="#2b2e34" font-size="21"
                 font-family="Manrope-Bold" font-weight="800">
-                <tspan x="0" y="0">Racz</tspan>
-              </text><text transform="translate(48.529 22)" fill="#2b2e34" font-size="21" font-family="Manrope-Bold"
-                font-weight="800">
-                <tspan x="0" y="0">ej </tspan>
+                <tspan x="0" y="0">Raczej </tspan>
               </text><text transform="translate(0 46.983)" fill="#2b2e34" font-size="21" font-family="Manrope-Bold"
                 font-weight="800">
-                <tspan x="0" y="0">po</tspan>
-              </text><text transform="translate(25.628 45.983)" fill="#2b2e34" font-size="20" font-family="Manrope-Bold"
-                font-weight="800">
-                <tspan x="0" y="0">zy</tspan>
-              </text><text transform="translate(49.258 46.983)" fill="#2b2e34" font-size="21" font-family="Manrope-Bold"
-                font-weight="800">
-                <tspan x="0" y="0">t</tspan>
-              </text><text transform="translate(58.189 46.983)" fill="#2b2e34" font-size="21" font-family="Manrope-Bold"
-                font-weight="800">
-                <tspan x="0" y="0">ywne</tspan>
+                <tspan x="0" y="0">pozytywne</tspan>
               </text></g><text transform="translate(425.739 7.826)" fill="#2b2e34" font-size="21"
               font-family="Manrope-Bold" font-weight="800">
               <tspan x="0" y="0"> </tspan>

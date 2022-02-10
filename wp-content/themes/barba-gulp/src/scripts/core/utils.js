@@ -138,12 +138,14 @@ export const includesAll = (arr, values) => values.every(v => arr.includes(v))
 
 export const startScroll = () => {
   if (location.hash) {
-    const targetSection = document.querySelector(location.hash)
-    const scrollIndent = targetSection ? getCoords(targetSection).top : 0
-    window.scrollTo({
-      top: scrollIndent,
-      behavior: 'instant'
-    })
+    setTimeout(() => {
+      const targetSection = document.querySelector(location.hash)
+      const scrollIndent = targetSection ? getCoords(targetSection).top : 0
+      window.scrollTo({
+        top: scrollIndent,
+        behavior: 'instant'
+      })
+    }, 400)
   } else {
     window.scrollTo({
       top: 0,
