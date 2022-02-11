@@ -2,11 +2,14 @@
  get_header(); 
   $users = array();
 
-  foreach(get_field('apel_list', 'options') as $item) {
+  foreach(get_field('apel_list', 'options') as  $key => $item) {
     if ($item['apel_acept']) {
       $users[] = $item;
+      $the_name[$key] = $item['apel_name'];
     }
   }
+
+  array_multisort($the_name, SORT_ASC, $users);
   $amount_itteration = count($users);
 ?>
 
