@@ -8,7 +8,7 @@ function add_subscriber() {
   $user_form_subject = 'Podpisanie Apelu';
   $user_name = trim($_POST["name"]);
   $user_email = trim($_POST["email"]);
-  $from_mail = 'michal.pietrzok@follow.vision';
+  $from_mail = 'info@prtoniepropaganda.pl';
   $secret_key = rand();
   $subscriber = array(
     'apel_name' => $user_name,
