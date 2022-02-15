@@ -8,15 +8,14 @@ function add_subscriber() {
   $user_form_subject = 'Podpisanie Apelu';
   $user_name = trim($_POST["name"]);
   $user_email = trim($_POST["email"]);
-  $from_mail = 'joanna.dokudowicz@zfpr.pl';
+  $from_mail = 'joanna.dokudowicz@prtoniepropaganda.pl';
   $secret_key = rand();
   $subscriber = array(
     'apel_name' => $user_name,
     'apel_email' => $user_email,
     'apel_secret' => $secret_key
   );
-  
-  
+
   $search_email = array_search($user_email, array_column(get_field('apel_list', 'options'), 'apel_email'));
   if ($search_email === false) {
     add_row('apel_list', $subscriber, 'options');
