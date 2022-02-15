@@ -44,7 +44,7 @@
           <label for="public" class="page-popup__label">Wyrażam zgodę na publikację przez Związek Firm Public Relations mojego imienia i nazwiska na stronie internetowej www.prtoniepropaganda.pl (zgoda jest dobrowolna, ale wymagana do podpisania „Apelu”)* <br> <br> *Zgody obowiązkowe</label>
         </div>
         <div class="page-popup__buton-wrap d-flex justify-content-center">
-          <button data-popup="sign" class="page-popup__button">Podpisuję</button>
+          <button class="page-popup__button" data-popup="sign">Podpisuję</button>
         </div>
       </form>
     </div>
