@@ -5,7 +5,7 @@ function add_subscriber() {
   $admin_email  = trim($_POST["admin_email"]);
   $form_subject = trim($_POST["form_subject"]);
 
-  $user_form_subject = 'Podpisanie Apelu';
+  $user_form_subject = 'Potwierdzenie podpisania apelu branży PR';
   $user_name = trim($_POST["name"]);
   $user_email = trim($_POST["email"]);
   $from_mail = 'joanna.dokudowicz@prtoniepropaganda.pl';
@@ -13,7 +13,8 @@ function add_subscriber() {
   $subscriber = array(
     'apel_name' => $user_name,
     'apel_email' => $user_email,
-    'apel_secret' => $secret_key
+    'apel_secret' => $secret_key,
+    'apel_acept' => true
   );
 
   $search_email = array_search($user_email, array_column(get_field('apel_list', 'options'), 'apel_email'));
@@ -23,9 +24,9 @@ function add_subscriber() {
     $user_message .= '<table>
       <tr>
         <td style="font-family: Arial; font-weight: 400; color: #000000;">
-          <p style="font-family: Arial; font-weight: 400; color: #000000;"> Dzień dobry, </p>
-          <p style="font-family: Arial; font-weight: 400; color: #000000;">Aby Twój podpis pod apelem branży PR był widoczny na stronie www.prtoniepropaganda.pl,</p>
-          <p style="font-family: Arial; font-weight: 400; color: #000000;">wymagane jest potwierdzenie adresu e-mail poprzez kliknięcie w <a href="'.get_home_url().'/potwierdzenie-adresu?user='.$user_email.'&sk='.$secret_key.'">ten link. </a></p>
+          <p style="font-family: Arial; font-weight: 400; color: #000000;">Dzień dobry, </p>
+          <p style="font-family: Arial; font-weight: 400; color: #000000;">Dziękujemy za podpisanie apelu branży PR.</p>
+          <p style="font-family: Arial; font-weight: 400; color: #000000;">Twój podpis jest już widoczny na stronie www.prtoniepropaganda.pl.</p>
           <br>
           <p style="font-family: Arial; font-weight: 400; color: #000000;">Pozdrawiamy </p>
           <p style="font-family: Arial; font-weight: 400; color: #000000;">Związek Firm Public Relations </p>
