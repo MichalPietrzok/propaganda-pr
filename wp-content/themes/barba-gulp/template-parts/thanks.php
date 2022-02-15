@@ -8,7 +8,7 @@
             <img data-popup="close" src="<?=images()?>close.svg" alt="" class="page-popup__close">
           </div>
           <h2 class="page-popup__title">Dziękujemy za podpisanie apelu!</h2>
-          <p class="page-popup__information">Twój podpis został dodany. <br> Przejdź do <a href="<?= get_home_url() ?>/lista-sygnatariuszy/">Listy Sygnatariuszy.</a></p>
+          <p class="page-popup__information" data-barba-prevent="all">Twój podpis został dodany. <br> Przejdź do <a href="<?= get_home_url() ?>/lista-sygnatariuszy/">Listy Sygnatariuszy.</a></p>
           <p class="page-popup__information">Żeby skontaktować się z nami napisz na <a href="mailto:info@zfpr.pl">info@zfpr.pl</a></p>
         </div>
       </div>
