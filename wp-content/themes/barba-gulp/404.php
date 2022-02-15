@@ -18,7 +18,7 @@ get_header();
             <div class="verification__wrap">
               <h2 class="verification__title">Błąd 404</h2>
               <p class="verification__information">Przejdź do <a href="<?= get_home_url()?>">Strony głównej</a></p>
-              <p class="verification__information">Albo skontaktuj się z nami <a href="mailto:info@zfpr.pl">info@zfpr.pl</a></p>
+              <p class="verification__information">Żeby skontaktować się z nami napisz na <a href="mailto:info@zfpr.pl">info@zfpr.pl</a></p>
             </div>
           </div>
         </div>
