@@ -10,12 +10,18 @@
 get_header();
 ?>
 <section class="error" data-barba="container"  data-barba-namespace="error">
-  <div class="container">
-    <div class="error__wrap row align-items-center">
-      <div class="error__info col-12 d-flex align-items-center justify-content-center flex-column">
-        <h1 class="error__info-title">404</h1>
-        <p class="error__info-text"> Ta strona nie istnieje </p>
-        <a class="error__info-link" href="<?= get_home_url() ?>">Przejdź do strony głownej</a>
+  <div class="verification">
+    <div class="align-items-center justify-content-center">
+      <div class="container container--medium">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center" style="height: 100vh">
+            <div class="verification__wrap">
+              <h2 class="verification__title">Błąd 404</h2>
+              <p class="verification__information">Przejdź do <a href="<?= get_home_url()?>">Strony głównej</a></p>
+              <p class="verification__information">Żeby skontaktować się z nami napisz na <a href="mailto:info@zfpr.pl">info@zfpr.pl</a></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
