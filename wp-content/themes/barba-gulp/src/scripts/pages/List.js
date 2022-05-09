@@ -18,7 +18,7 @@ const List = new Page({
 
     showButton.addEventListener('click', () => {
       const animatiopn = gsap.timeline()
-        .to(listWarapper, { maxHeight: '2000', duration: 2 })
+        .to(listWarapper, { maxHeight: '5000', duration: 2 })
         .to(showButton.parentNode, { display: 'none' }, '<')
     })
   }
